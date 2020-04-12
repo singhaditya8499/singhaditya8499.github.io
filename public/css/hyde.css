@@ -52,6 +52,9 @@ html {
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
  */
+ .profile {
+  border-radius: 50%;
+ }
 
 .sidebar {
   text-align: center;
