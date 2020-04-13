@@ -21,7 +21,7 @@
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
-          {% if node.layout == "page" or node.title == "Blog1" %}
+          {% if node.layout == "page" or node.title == "Blog" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
@@ -29,10 +29,10 @@
       <!-- <a class="sidebar-nav-item" href="/blog.html">Blog</a> -->
       <a class="sidebar-nav-item" href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
       <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+      <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
 
     <!-- <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p> -->
-    <p class="foot">Made with <span style="font-size:150% !important;color:orange !important;">♥</span></p>
+    <p class="foot">Made with <span style="font-size:150% !important;color:orange !important;">♥</span> and Hyde</p>
   </div>
 </div>

@@ -7,15 +7,15 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Thinking..
-tagline:          'A Jekyll theme'
-description:      'Under Construction' #'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            Aditya Singh
+tagline:          ''
+description:      'Technology pantomath' #'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 # url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Aditya Singh'
+  url:            https://www.linkedin.com/in/singhaditya8499/
 
 paginate:         5
 
