@@ -8,7 +8,7 @@ title: Blog1
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
-        {{ post.title }}
+        {{ post.excerpt }}
       </a>
     </h1>
 
