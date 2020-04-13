@@ -8,12 +8,12 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} <!--&middot; {{ site.tagline }}-->
+      {{ site.title }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-
+  <!--&middot; {{ site.tagline }} From above if part-->
   <!-- CSS -->
   <link rel="stylesheet" href="{{ '/' | relative_url }}public/css/poole.css">
   <link rel="stylesheet" href="{{ '/' | relative_url }}public/css/syntax.css">
