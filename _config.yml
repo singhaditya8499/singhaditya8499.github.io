@@ -17,7 +17,7 @@ author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         5
 
 # Custom vars
 version:          1.1.0
