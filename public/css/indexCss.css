@@ -77,7 +77,7 @@
   }
   
   .tooltip .tooltiptext::after {
-    content: attr(data);
+    content: "";
     position: absolute;
     bottom: 100%;
     left: 50%;
