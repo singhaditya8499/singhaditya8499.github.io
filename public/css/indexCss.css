@@ -30,6 +30,10 @@
     animation-delay: 0.3s;
     animation-fill-mode: both;
 }
+.name {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
 .description {
     font-size: 1.02rem;
     font-weight: 300;
@@ -51,26 +55,38 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-.nav-index {
-    margin-top: 25px;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
     text-align: center;
-}
-nav {
-    display: block;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0 13px 0;
-}
-.item
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: attr(data);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
