@@ -53,8 +53,8 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
  .profile {
-  border-radius: 50%;
-  width: 250px;
+  border-radius: 100%;
+  width: 200px;
  }
 
 .sidebar {
