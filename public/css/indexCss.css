@@ -1,0 +1,52 @@
+.wrapper-index {
+    max-width: 810px;
+    line-height: 1;
+    font: 16px -apple-system,"Lato",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    color: #666;
+}
+@media only screen and (max-width: 1050px) and (min-width: 400px){
+    .wrapper-large {
+        width: 88%;
+    }
+}
+.wrapper-large {
+    height: 100%;
+    width: 96%;
+    margin: 0 auto;
+}
+.home-page {
+    margin-top: 125px;
+}
+.head-header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.animated {
+    animation: fade-in-down 0.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+.description {
+    font-size: 1.85rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #483737;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+.keybase {
+    font-family: monospace;
+    line-height: 1.7;
+    color: #483737;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: .4px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
