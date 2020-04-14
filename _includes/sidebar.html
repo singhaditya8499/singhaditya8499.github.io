@@ -1,5 +1,9 @@
 <div class="sidebar">
-  <img class="profile" src="../public/Profile.jpg" alt="Avatar">
+  {% if node.title != "Blog" and node.title != "About" and node.title != "Home" %}
+    <img class="profile" src="../../../../public/Profile.jpg" alt="Avatar">
+  {% else %}
+    <img class="profile" src="../public/Profile.jpg" alt="Avatar">
+  {% endif %}
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
