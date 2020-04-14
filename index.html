@@ -7,6 +7,24 @@ title: Home
   <!-- <a href="www.google.co.in">Google</a> -->
   <img class="profile" style="align-items: center !important;" src="../public/Profile.jpg" alt="Avatar">
   <a class="link" data-title="keybase.io/singhaditya" href="https://keybase.io/singhaditya" style="color: black; font-family: monospace; text-decoration: none;" target="_blank">9760 A7F9 636D 15F9</a>
-  <h4>Welcome</h4>
+  <nav style="display: inline !important;">
+    <a href="{{ '/' | relative_url }}">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" or node.title == "Blog" %}
+          <a href="{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <a href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
+  </nav>
+  
 </div>
 <!-- <p>Hello Index</p> -->
