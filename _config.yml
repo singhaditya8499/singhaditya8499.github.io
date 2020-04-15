@@ -24,3 +24,12 @@ version:          1.1.0
 
 github:
   # repo:           https://github.com/poole/hyde
+
+footer-links:
+  dribbble:
+  email: singh.aditya8499@gmail.com
+  facebook: singh.aditya8499
+  flickr:
+  github: singhaditya8499
+  instagram: asli_singham/
+  linkedin: singhaditya8499/
