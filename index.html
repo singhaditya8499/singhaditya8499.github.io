@@ -17,9 +17,6 @@ title: Home
     </header>
     <br>
     <nav >
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <span class="separate">-</span>
-
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
@@ -29,12 +26,12 @@ title: Home
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" or node.title == "Blog" %}
-            <a href="{{ node.url }}">{{ node.title }}</a>
+            <a class="sidebar-nav-item" href="{{ node.url }}">{{ node.title }}</a>
             <span class="separate">-</span>
           {% endif %}
         {% endif %}
       {% endfor %}
-      <a href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
+      <a class="sidebar-nav-item" href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
     </nav>
   </div>
 </div>
