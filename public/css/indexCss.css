@@ -82,7 +82,8 @@ a.nav-item-index:hover {
 }
 #footer {
     text-align: center;
-    position: fixed;
+    position: relative;
+    top: 60px;
     bottom: 0;
     width: 100%;
     align-content: baseline;
