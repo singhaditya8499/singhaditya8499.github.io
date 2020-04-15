@@ -4,32 +4,6 @@ title: Home
 ---
 <link rel="stylesheet" type="text/css" href="./public/css/indexCss.css">
 <link rel="stylesheet" type="text/css" href="./public/css/svg-icons.css">
-<style>  
-  .box
-  {
-    border: 1px solid green;
-    position:absolute;
-    color: white;
-    top: 19px;
-    left: 30px;
-    background-color: black;
-  }
-  </style>
-  <script>
-  $().ready(function(){
-  $( "a" ).hover(
-    function() {   
-     var title = $(this).attr("data-title");  // extracts the title using the data-title attr applied to the 'a' tag
-      $('<div/>', { // creates a dynamic div element on the fly
-          text: title,
-          class: 'box'
-      }).appendTo(this);  // append to 'a' element
-    }, function() {
-      $(document).find("div.box").remove(); // on hover out, finds the dynamic element and removes it.
-    }
-  );
-    });
-  </script>
 <div class="wrapper-index"> 
   <div class="home-page">
     <header class="home-header animation">
@@ -54,12 +28,12 @@ title: Home
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" or node.title == "Blog" %}
-            <a data-title="{{ node.title }}" class="nav-item-index" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="nav-item-index" href="{{ node.url }}">{{ node.title }}</a>
             <span class="separate">-</span>
           {% endif %}
         {% endif %}
       {% endfor %}
-      <a data-title="Resume" class="nav-item-index" href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
+      <a class="nav-item-index" href="https://drive.google.com/file/d/1VnBQSyRCjvPuRMsUIK4RlhrELVF2Ed-K/view?usp=sharing">Resume</a>
     </nav>
   </div>
 </div>
