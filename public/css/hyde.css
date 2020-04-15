@@ -94,6 +94,7 @@ html {
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
+  font-weight: 100;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -109,6 +110,12 @@ a.sidebar-nav-item:focus {
 .profile-nav {
   margin-top: 50px;
 }
+.sidenav-icons {
+  background-color: ghostwhite;
+}
+.footer {
+  letter-spacing: 6px;
+}
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -117,6 +124,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .sidebar-sticky {
+    text-align: center;
     position: absolute;
     right:  1rem;
     bottom: 1rem;
