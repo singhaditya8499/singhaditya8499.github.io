@@ -36,15 +36,15 @@
     font-style: normal;
     color: gray;
     width: 70%;
-    margin: 30px auto 30px;
+    margin: 30px auto 1px;
 }
 .description {
-    font-size: 1.02rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 200;
     font-style: normal;
     color: gray;
     width: 70%;
-    margin: 30px auto 30px;
+    margin: 0px auto 30px;
 }
 .keybase {
     font-family: monospace;
@@ -52,7 +52,7 @@
     color: #483737;
     font-weight: 549;
     margin-bottom: 20px;
-    letter-spacing: .3px;
+    letter-spacing: 1px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -62,5 +62,21 @@
 
 .nav-item-index {
     display: inline;
-
+    color: black;
+    letter-spacing: 0.5px;
+    /* margin-block-end: 2px; */
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: 200;
+}
+hr {
+    position: inherit;
+    margin: 1.5rem 50px;
+    border: 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+a.nav-item-index:hover {
+    font-weight: normal;
+    text-decoration: none;
 }
