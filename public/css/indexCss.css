@@ -86,4 +86,5 @@ a.nav-item-index:hover {
     bottom: 0;
     width: 100%;
     align-content: baseline;
+    letter-spacing: 10px;
 }
