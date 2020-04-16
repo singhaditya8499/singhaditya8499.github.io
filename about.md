@@ -11,7 +11,7 @@ title: About
         <br>
         <p class="message">
             "You never know what you are good at till you try."
-            <div class="author">William Cobett</div>
+            <span class="author">- William Cobett</span>
         </p>
         <br>    
     </div>
@@ -20,7 +20,7 @@ title: About
         <br>
         <p class="message">
             “For the things we have to learn before we can do them, we learn by doing them.”
-            <div class="author">Aristotle, The Nicomachean Ethics</div>
+            <span class="author">- Aristotle, The Nicomachean Ethics</span>
         </p>
         <br>    
     </div>
