@@ -279,6 +279,10 @@ a.sidebar-nav-item:focus {
   text-align: right;
   display: block;
 }
+.knowledge {
+  column-count: 2;
+  margin-top: 20px;
+}
 
 
 

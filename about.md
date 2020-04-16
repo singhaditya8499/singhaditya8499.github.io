@@ -4,9 +4,8 @@ title: About
 ---
 
 <p>Hello World! My name is <strong>Aditya Singh</strong></p>
-<p>I love to play with new technologies and build stuff out of them.</p>
 <p>
-    A sport programmer with interest ranging from Development to Machine learning to Blockchain. I want to learn every possible technology out there. I am good in few of them.
+    A sport programmer with interest expanding towards every direction of modern technological sphere. I have the passion to learn new things. I am good in few of them.
     <div class="quote">
         <br>
         <p class="message">
@@ -15,7 +14,7 @@ title: About
         </p>
         <br>    
     </div>
-    I then build a solution for a real world problem using the newly learnt technology stack.
+    After learning I try to build a solution for a real world problem using the newly learnt technology stack.
     <div class="quote">
         <br>
         <p class="message">
@@ -24,4 +23,21 @@ title: About
         </p>
         <br>    
     </div>
+</p>
+<h3>Technology Stack</h3>
+<ul class="knowledge">
+    <ul>C++</ul>
+    <ul>Algorithms</ul>
+    <ul>Data Structures</ul>
+    <ul>SQL</ul>
+    <ul>Java</ul>
+    <ul>Springboot</ul>
+    <ul>Elasticsearch</ul>
+    <ul>Angular</ul>
+    <ul>Selenium</ul>
+    <ul>OpenCV</ul>
+    <ul>R</ul>
+</ul>
+<p>
+    I have active interest in Mathematics, Problem solving due to which I am more inclined towards sport programming and solving hypothetical problems. Apart from that I won
 </p>
