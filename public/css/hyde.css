@@ -283,6 +283,59 @@ a.sidebar-nav-item:focus {
   column-count: 2;
   margin-top: 20px;
 }
+.skill-cont {
+  width: 100%;
+  background-color: gray;
+}
+.skills {
+  font-size: small;
+  text-align: right;
+  color: white;
+}
+.cplus {
+  width: 95%;
+  background-color: black;
+}
+.algo {
+  width: 90%;
+  background-color: black;
+}
+.java {
+  width: 50%;
+  background-color: black;
+}
+.es {
+  width: 40%;
+  background-color: black;
+}
+.sboot {
+  width: 30%;
+  background-color: black;
+}
+.angular {
+  width: 45%;
+  background-color: black;
+}
+.ds {
+  width: 90%;
+  background-color: black;
+}
+.sql {
+  width: 60%;
+  background-color: black;
+}
+.sel {
+  width: 50%;
+  background-color: black;
+}
+.opcv {
+  width: 55%;
+  background-color: black;
+}
+.rlan {
+  width: 40%;
+  background-color: black;
+}
 
 
 
