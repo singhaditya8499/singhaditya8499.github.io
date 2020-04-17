@@ -26,78 +26,78 @@ title: About
 </p>
 <h3>Technology Stack</h3>
 <ul class="knowledge">
-    <ul>
-        <p>C++</p>
+    <div class="skill-set">
+        <p class="skill-name">C++</p>
         <div class="skill-cont">
             <div class="skills cplus">95%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Algorithms</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Algorithms</p>
         <div class="skill-cont">
             <div class="skills algo">90%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Java</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Java</p>
         <div class="skill-cont">
             <div class="skills java">50%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Elasticsearch</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Elasticsearch</p>
         <div class="skill-cont">
             <div class="skills es">40%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Springboot</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Springboot</p>
         <div class="skill-cont">
             <div class="skills sboot">30%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Angular</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Angular</p>
         <div class="skill-cont">
             <div class="skills angular">45%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Data Structures</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Data Structures</p>
         <div class="skill-cont">
             <div class="skills ds">90%</div>
         </div>
-    </ul>
-    <ul>
-        <p>HTML</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">HTML</p>
         <div class="skill-cont">
             <div class="skills html">65%</div>
         </div>
-    </ul>
-    <ul>
-        <p>SQL</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">SQL</p>
         <div class="skill-cont">
             <div class="skills sql">60%</div>
         </div>
-    </ul>
-    <ul>
-        <p>Selenium</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">Selenium</p>
         <div class="skill-cont">
             <div class="skills sel">50%</div>
         </div>
-    </ul>
-    <ul>
-        <p>OpenCV</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">OpenCV</p>
         <div class="skill-cont">
             <div class="skills opcv">55%</div>
         </div>
-    </ul>
-    <ul>
-        <p>R</p>
+    </div>
+    <div class="skill-set">
+        <p class="skill-name">R</p>
         <div class="skill-cont">
             <div class="skills rlan">40%</div>
         </div>
-    </ul>
+    </div>
 </ul>
 <p>
     I have active interest in Mathematics, Problem solving due to which I am more inclined towards sport programming and solving hypothetical problems. Apart from that I won

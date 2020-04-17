@@ -340,6 +340,13 @@ a.sidebar-nav-item:focus {
   width: 40%;
   background-color: black;
 }
+.skill-set {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.skill-name {
+  margin-bottom: 3px;
+}
 
 
 
