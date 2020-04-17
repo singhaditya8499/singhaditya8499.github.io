@@ -280,12 +280,12 @@ a.sidebar-nav-item:focus {
   display: block;
 }
 .knowledge {
-  column-count: 2;
+  column-count: 1;
   margin-top: 20px;
 }
 .skill-cont {
   width: 100%;
-  background-color: gray;
+  background-color: darkgray;
 }
 .skills {
   font-size: small;
@@ -294,51 +294,51 @@ a.sidebar-nav-item:focus {
 }
 .cplus {
   width: 95%;
-  background-color: black;
+  background-color: #676060;
 }
 .algo {
   width: 90%;
-  background-color: black;
+  background-color: #676060;
 }
 .java {
   width: 50%;
-  background-color: black;
+  background-color: #676060;
 }
 .es {
   width: 40%;
-  background-color: black;
+  background-color: #676060;
 }
 .sboot {
   width: 30%;
-  background-color: black;
+  background-color: #676060;
 }
 .angular {
   width: 45%;
-  background-color: black;
+  background-color: #676060;
 }
 .ds {
   width: 90%;
-  background-color: black;
+  background-color: #676060;
 }
 .html {
   width: 65%;
-  background-color: black;
+  background-color: #676060;
 }
 .sql {
   width: 60%;
-  background-color: black;
+  background-color: #676060;
 }
 .sel {
   width: 50%;
-  background-color: black;
+  background-color: #676060;
 }
 .opcv {
   width: 55%;
-  background-color: black;
+  background-color: #676060;
 }
 .rlan {
   width: 40%;
-  background-color: black;
+  background-color: #676060;
 }
 .skill-set {
   margin-top: 20px;
