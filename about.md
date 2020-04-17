@@ -99,3 +99,4 @@ title: About
         </div>
     </div>
 </ul>
+<p>Contact details are present on the bottom of the left panel.</p>
