@@ -99,6 +99,3 @@ title: About
         </div>
     </div>
 </ul>
-<p>
-    I have active interest in Mathematics, Problem solving due to which I am more inclined towards sport programming and solving hypothetical problems. Apart from that I won
-</p>
