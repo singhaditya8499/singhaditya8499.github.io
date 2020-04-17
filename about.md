@@ -69,6 +69,12 @@ title: About
         </div>
     </ul>
     <ul>
+        <p>HTML</p>
+        <div class="skill-cont">
+            <div class="skills html">65%</div>
+        </div>
+    </ul>
+    <ul>
         <p>SQL</p>
         <div class="skill-cont">
             <div class="skills sql">60%</div>

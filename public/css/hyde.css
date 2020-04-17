@@ -320,6 +320,10 @@ a.sidebar-nav-item:focus {
   width: 90%;
   background-color: black;
 }
+.html {
+  width: 65%;
+  background-color: black;
+}
 .sql {
   width: 60%;
   background-color: black;
