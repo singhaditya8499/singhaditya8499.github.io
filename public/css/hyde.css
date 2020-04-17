@@ -349,4 +349,13 @@ a.sidebar-nav-item:focus {
 }
 
 
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/*Blog styling*/
 
+.summary {
+  font-size: 15px;
+}
+.blog-data {
+  font-size: 15px;
+  text-align: justify;
+}
