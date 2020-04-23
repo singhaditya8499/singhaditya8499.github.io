@@ -27,10 +27,18 @@ title: About
 <h3>Technology Stack</h3>
 <ul class="knowledge">
     <div class="skill-set">
-        <p class="skill-name">C++</p>
-        <div class="skill-cont">
-            <div class="skills cplus">95%</div>
-        </div>
+        <span>
+             <p class="skill-name">C++</p>
+            <div class="skill-cont">
+                <div class="skills cplus">95%</div>
+            </div>
+        </span>
+        <span>
+            <p class="skill-name">Algorithms</p>
+            <div class="skill-cont">
+                <div class="skills algo">90%</div>
+            </div>
+        </span>
     </div>
     <div class="skill-set">
         <p class="skill-name">Algorithms</p>
