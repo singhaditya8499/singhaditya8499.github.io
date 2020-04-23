@@ -5,7 +5,7 @@ title: About
 
 <p>Hello World! My name is <strong>Aditya Singh</strong></p>
 <p>
-    A sport programmer with interest expanding towards every direction of modern technological sphere. I have the passion to learn new things. I am good in few of them.
+    A sport programmer with interest in multiple dimensions of technology. I have the passion to learn new things. I am good in few of them.
     <div class="quote">
         <br>
         <p class="message">
@@ -14,7 +14,7 @@ title: About
         </p>
         <br>    
     </div>
-    After learning I try to build a solution for a real world problem using the newly learnt technology stack.
+    I believe in learning by doing. When I learn a new technology stack, I try to solve a problem by using it. It helps to explore how that stack works. It also helps to reveal some new errors. (They are not too fun to resolve)
     <div class="quote">
         <br>
         <p class="message">
@@ -24,21 +24,22 @@ title: About
         <br>    
     </div>
 </p>
-<h3>Technology Stack</h3>
+<h3>Technology Stack Known (Under Progress)</h3>
 <ul class="knowledge">
-    <div class="skill-set">
-        <span>
-             <p class="skill-name">C++</p>
-            <div class="skill-cont">
-                <div class="skills cplus">95%</div>
-            </div>
-        </span>
-        <span>
-            <p class="skill-name">Algorithms</p>
-            <div class="skill-cont">
-                <div class="skills algo">90%</div>
-            </div>
-        </span>
+    <li>C++</li>
+    <li>Algorithms</li>
+    <li>Data Structures</li>
+    <li>Python</li>
+    <li>SQL</li>
+    <li>Java</li>
+</ul>
+<p>Contact details are present on the bottom of the left panel.</p>
+
+    <!-- <div class="skill-set">
+        <p class="skill-name">C++</p>
+        <div class="skill-cont">
+            <div class="skills cplus">95%</div>
+        </div>
     </div>
     <div class="skill-set">
         <p class="skill-name">Algorithms</p>
@@ -105,6 +106,4 @@ title: About
         <div class="skill-cont">
             <div class="skills rlan">40%</div>
         </div>
-    </div>
-</ul>
-<p>Contact details are present on the bottom of the left panel.</p>
+    </div> -->
