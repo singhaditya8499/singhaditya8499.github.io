@@ -53,4 +53,16 @@ Lets take a look at one of the games `Why don't you?...Yes but..`
 
 #### <ins>Why don't you?.. - Yes but..</ins>
 
-Suppose two people are discussiong about a programming problem
+Suppose two people are discussiong about a programming problem. Person A asks B that he is not able to solve a problem. This is how the conversation goes:
+
+- A: I am not able to solve this problem.
+- B: Why dont you ask Amit? He has solved this before.
+- A: Yes but it appears he is too busy.
+- B: Ok, why don't you try solution X?
+- A: Yes but, I dont have the permission.
+- B: You can try performing Y
+- A: Yes but I dont think it would work.
+
+This would go on and on till B dont have any solution. A here is the con, the gimmick was the inability of B to say that A should try first before giving absurd reasons to not doing it. The payoff is that A believes that the problem is not solvable or he wanted to see B's inability to solve an issue. Again this might not be a known agenda of A. 
+
+There are many other social games which Eric proposed. There are games we play in our day to day life and are not able to see them. I have seen people play many other transactional games as well, will not disclose them here beacuse even I want to have a larger chunk of the transaction we might have in the future.
