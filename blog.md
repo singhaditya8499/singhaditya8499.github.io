@@ -5,7 +5,7 @@ title: Blog
 
 <div class="posts">
   {% for post in site.posts %}
-    {% post.layout == "post" %}
+    {% if post.layout == "post" %}
       <div class="post">
         <h2 class="post-title">
           <a href="{{ post.url }}">
