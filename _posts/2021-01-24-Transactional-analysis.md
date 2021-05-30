@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transactional analysis - Part 1
+title: Transactional analysis
 ---
 
 The most basic in human psychology is "Why do we talk?".
