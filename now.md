@@ -4,7 +4,7 @@ title: Now
 ---
 
 <div class="posts">
-  {% for post in site.nowPosts %}
+  {% for post in site.posts.nowPosts %}
   <div class="post">
     <h2 class="post-title">
       <a href="{{ post.url }}">
