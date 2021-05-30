@@ -8,12 +8,12 @@ title: Now
   {% if post.layout == "now" %}
     <div class="post">
       <h2 class="post-title">
-      <a href="{{ post.url }}">
+      <!-- <a href="{{ post.url }}"> -->
         {{ post.title }}
-      </a>
+      <!-- </a> -->
       </h2>
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      <span class="summary">{{ post.excerpt }}</span>
+      <span class="now-date">{{ post.date | date_to_string }}</span>
+      <span class="now-content">{{ post.content }}</span>
     </div>
   {% endif%}
   {% endfor %}
