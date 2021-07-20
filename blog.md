@@ -13,7 +13,7 @@ title: Blog
           </a>
         </h2>
         <span class="post-date">{{ post.date | date_to_string }}</span>
-        <span class="summary">{{ post.excerpt }}</span>
+        <!-- <span class="summary">{{ post.excerpt }}</span> -->
       </div>
     {% endif%}
   {% endfor %}
