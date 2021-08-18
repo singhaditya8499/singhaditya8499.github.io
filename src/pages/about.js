@@ -21,6 +21,7 @@ export default ({ data }) => {
     showsList,
     designations,
     unemployed,
+    company,
   } = data.site.siteMetadata
   const { toString } = useContext(ThemeContext)
 
@@ -34,9 +35,10 @@ export default ({ data }) => {
       <Container>
         <Image
           rounded
+          roundedCircle={true}
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          src={`../../icons/profile.jpg`}
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
@@ -51,24 +53,24 @@ export default ({ data }) => {
           <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
             <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
+              href="https://www.urbandictionary.com/define.php?term=pantomath"
               target="_blank"
               rel="noopener noreferrer"
             >
-              padawan
+              pantomath
             </a>
             &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            and a <b>{occupation}</b> at <b>{company}</b> working in Global Mile organisation.
+            As the term suggest, I work on creating solutions for global movement of small parcels.
+            I have the strong desire of learning new things.
+            I am driven by this quote of Confucius: <b>“We have two lives, and the second begins when we realize we only have one.”</b>
+             I am a big football fanatic, not the US one (:P) and a Real Madrid supporter (even if we dont have Ronaldo).
+            <br/>
           </p>
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+            In my spare time, I read non fictional books, read and learn about new evolutions happening in the tech
+            industry. Recently, I have developed a taste for hip hop music, thanks to my cousins! I love stand up comedy and 
+            play chess occasionally (not so good but working on it).
           </p>
           <p className="i-5">
             Check out my <Link to="/projects">projects</Link> to see what I've
@@ -126,6 +128,7 @@ export const query = graphql`
         occupation
         author
         designations
+        company
         readingList {
           title
           author

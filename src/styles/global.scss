@@ -91,9 +91,9 @@ body {
     color: $faded-red;
   }
   &.empire {
-    border-radius: 50%;
+    border-radius: 100%;
     color: $white;
-    background: $black;
+    background: #131313;
     &:hover {
       color: $black;
       background: $white;

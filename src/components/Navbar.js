@@ -11,7 +11,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
-          icon={["fab", `${dark ? "empire" : "rebel"}`]}
+          icon="home"
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
         />

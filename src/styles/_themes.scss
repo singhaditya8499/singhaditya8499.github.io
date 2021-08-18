@@ -12,13 +12,13 @@ $themes: (
     navBackground: $gray-100,
     secondary: $gray-900,
     textColor: $black,
-    firstName: orange,
+    firstName: #40E0D0,
     lastName: $black,
     linkHover: $gray-800,
     themeColor: $dark-blue,
     heartColor: pink,
     titleColor: $dark-blue,
-    hrefColor: $dark-blue,
+    hrefColor: $white,
     github: $black,
     linkedin: $linkedin-blue,
     fcc: $fcc-green,
@@ -31,23 +31,23 @@ $themes: (
   dark: (
     backgroundColor: #222,
     footerBackground: #222,
-    secondary: $gray-100,
+    secondary: $white,
     navBackground: $dark-gray,
     linkHover: $gray-200,
     textColor: $gray-300,
     firstName: $gray-100,
-    lastName: $empire-red,
+    lastName: orange,
     titleColor: $white,
-    hrefColor: $faded-red,
+    hrefColor: #131313,
     themeColor: $dark-red,
     heartColor: red,
-    github: $empire-red,
-    linkedin: $empire-red,
+    github: $white,
+    linkedin: $linkedin-blue,
     fcc: $empire-red,
-    hr: $empire-red,
-    mail: $empire-red,
-    file: $empire-red,
-    iconBackground: $black,
+    hr: $hr-green,
+    mail: $white,
+    file: $white,
+    iconBackground: #222,
     cardBackground: $dark-gray,
   ),
 );
@@ -105,6 +105,7 @@ $themes: (
     color: themed("linkHover") !important;
     &:hover {
       text-decoration: underline themed("hrefColor") solid;
+      font-weight: bolder;
     }
   }
 }
@@ -196,8 +197,9 @@ div {
   }
 }
 
-p {
+p, li, code {
   @include themify($themes) {
     color: themed("textColor");
   }
 }
+

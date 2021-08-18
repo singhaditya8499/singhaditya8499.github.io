@@ -9,18 +9,18 @@ const CompanyCard = ({ frontmatter, image }) => {
       <Img
         fluid={image}
         style={{
-          maxHeight: "15vmax",
-          maxWidth: "15vmax",
+          maxHeight: "10vmax",
+          maxWidth: "10vmax",
         }}
         className="m-auto"
       />
       <div className="md-font">
-        <h2 className="m-auto pt-2">{company}</h2>
-        <h5 className="text-muted">{location}</h5>
-        <h4 className="mt-2">{position}</h4>
-        <h5 className="text-muted mt-2">
+        <h4 className="m-auto pt-2">{company}</h4>
+        <h6 className="text-muted">{location}</h6>
+        <h5 className="mt-2">{position}</h5>
+        <h6 className="text-muted mt-2">
           {startDate}-{endDate}
-        </h5>
+        </h6>
       </div>
     </Container>
   )

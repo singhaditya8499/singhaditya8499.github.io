@@ -7,28 +7,29 @@ import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+  const { unemployed, firstName, lastName, occupation, company } = data.site.siteMetadata
   const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
       <SEO title="Home" />
-      <Container className="text-center pt-5 mt-5" fluid>
-        <Image
-          width="150"
-          height="150"
+      <div className="text-center px-0 mx-0" style={{ marginTop: "10%" }}>
+        {/* <Image
+          width="200"
+          height="200"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
+          src={dark ? `../../icons/p.png` : `../../icons/p.png`}
           alt={dark ? "Darth Vader" : "R2-D2"}
-        />
+        /> */}
+
         {unemployed && (
           <p className="mt-2">
             <b> Hey! I am looking for new opportunities :)</b>
           </p>
         )}
         <Container className="py-0 my-0">
-          <h1
+          <h1 className="display-1"
             style={{
-              fontSize: "5rem",
+              fontSize: "7vmax",
               color: "black",
             }}
           >
@@ -36,16 +37,33 @@ export default ({ data }) => {
             <span className="last-name">{lastName}</span>
           </h1>
           <p>
+            <emp>
+              Pantomath&nbsp;
+            </emp>
+            <br/>
+            <br/>
             <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              <a 
+              href="https://keybase.io/singhaditya" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "gray", 
+                fontFamily: "monospace", 
+                fontStyle: "normal",
+                textDecoration: "none",
+                fontSize: "1.2rem",
+                }}
+              >
+                9760 A7F9 636D 15F9
+              </a>
             </i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
+            href="https://github.com/singhaditya8499"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +74,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/singhaditya8499/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,18 +85,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
+            href="https://www.hackerrank.com/white_whale"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +96,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:singh.aditya8499@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -107,7 +114,7 @@ export default ({ data }) => {
             />
           </a>
         </div>
-      </Container>
+      </div>
     </PageLayout>
   )
 }
@@ -120,6 +127,7 @@ export const query = graphql`
         firstName
         lastName
         occupation
+        company
       }
     }
   }
