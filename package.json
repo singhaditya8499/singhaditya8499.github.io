@@ -1,16 +1,18 @@
 {
-  "name": "john-doe-starter-site",
+  "name": "Aditya-Singh-Portfolio",
   "private": true,
-  "description": "A personal site built on the bare-bones starter for Gatsby",
+  "description": "My Portfolio",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "local": "gatsby build && gatsby serve",
     "clean-serve": "gatsby clean && gatsby build && gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
