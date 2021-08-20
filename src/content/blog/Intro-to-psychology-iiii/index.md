@@ -17,7 +17,7 @@ date: "2021-08-20"
         2. Nativism: We are born with existing structure in brain
         3. Constructivism: It is a hybrid of above two
 
-![https://www.verywellmind.com/thmb/uJlLo2UEz5JeZMCfQwh-BjLn2tg=/1333x1000/smart/filters:no_upscale()/child-development-theories-2795068-01-de70d302f2f94e60b00e57c59bd5984f.png](https://www.verywellmind.com/thmb/uJlLo2UEz5JeZMCfQwh-BjLn2tg=/1333x1000/smart/filters:no_upscale()/child-development-theories-2795068-01-de70d302f2f94e60b00e57c59bd5984f.png)
+![https://www.verywellmind.com/thmb/3MOTmZ9a2vAozymXfe4pluo8_-c=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/child-development-theories-2795068-01-de70d302f2f94e60b00e57c59bd5984f.png](https://www.verywellmind.com/thmb/3MOTmZ9a2vAozymXfe4pluo8_-c=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/child-development-theories-2795068-01-de70d302f2f94e60b00e57c59bd5984f.png)
 
 Jean Piaget is known as the father of developmental psychology. His research field was genetic epistemelogy. He gave the theory of cognitive development.
 
