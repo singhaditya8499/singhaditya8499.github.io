@@ -31,14 +31,14 @@ module.exports = {
         link: `https://www.goodreads.com/book/show/23692271-sapiens`,
       },
       {
-        title: `Behave: The Biology of Humans at our Best and Worst`,
-        author: `Robert Sapolsky`,
-        link: `https://www.goodreads.com/book/show/31170723-behave`,
+        title: `Talent is Overrated: What Really Separates World-Class Performers from Everybody Else`,
+        author: `Geoff Colvin`,
+        link: `https://www.goodreads.com/book/show/4485966-talent-is-overrated`,
       },
       {
-        title: `The Gene: An Intimate History`,
-        author: `Siddhartha Mukeherjee`,
-        link: `https://www.goodreads.com/book/show/27276428-the-gene`,
+        title: `The Rudest Book Ever`,
+        author: `Shwetabh Gangwar`,
+        link: `https://www.goodreads.com/book/show/49057616-the-rudest-book-ever`,
       },
     ],
     showsList: [
