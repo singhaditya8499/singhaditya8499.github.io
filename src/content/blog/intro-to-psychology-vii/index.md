@@ -1,9 +1,9 @@
 ---
 title: "Introduction to Psychology - VII"
-tags: ["language", "child", "development", "psychology"]
-description: "Developmental psychology"
+tags: ["differences", "clinical", "happiness", "psychology"]
+description: "Differences, Clinical psychology and Happiness"
 author: "Aditya Singh"
-date: "2021-08-20"
+date: "2021-09-02"
 ---
 # Differences, Clinical psychology and Happiness
 
