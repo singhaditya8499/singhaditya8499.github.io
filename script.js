@@ -1,39 +1,62 @@
-const menuBtn = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
-const themeBtn = document.getElementById("theme-toggle");
-const year = document.getElementById("year");
-const root = document.documentElement;
+(() => {
+  const menuBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+  const themeBtn = document.getElementById("theme-toggle");
+  const year = document.getElementById("year");
+  const root = document.documentElement;
 
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
-}
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+  }
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  root.setAttribute("data-theme", "dark");
-}
-
-if (themeBtn) {
-  const setLabel = () => {
-    const isDark = root.getAttribute("data-theme") === "dark";
-    themeBtn.textContent = isDark ? "Light" : "Dark";
+  const storage = {
+    get(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch (e) {
+        return null;
+      }
+    },
+    set(key, value) {
+      try {
+        localStorage.setItem(key, value);
+      } catch (e) {
+        // Ignore storage errors in restrictive browser modes.
+      }
+    },
   };
 
-  setLabel();
-
-  themeBtn.addEventListener("click", () => {
-    const isDark = root.getAttribute("data-theme") === "dark";
-    if (isDark) {
-      root.removeAttribute("data-theme");
-      localStorage.setItem("theme", "light");
-    } else {
+  const applyTheme = (theme) => {
+    const dark = theme === "dark";
+    if (dark) {
       root.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
+      document.body.classList.add("dark");
+    } else {
+      root.removeAttribute("data-theme");
+      document.body.classList.remove("dark");
     }
-    setLabel();
-  });
-}
+    if (themeBtn) {
+      themeBtn.textContent = dark ? "Light" : "Dark";
+    }
+  };
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+  const savedTheme = storage.get("theme");
+  if (savedTheme === "dark" || savedTheme === "light") {
+    applyTheme(savedTheme);
+  } else {
+    applyTheme("light");
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      applyTheme(next);
+      storage.set("theme", next);
+    });
+  }
+
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+})();

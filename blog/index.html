@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog by Aditya Singh" />
+    <title>Blog | Aditya Singh</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../index.html">Aditya Singh</a>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
+          <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+        </div>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="../index.html">About Me</a></li>
+          <li><a class="active" href="./">Blog</a></li>
+          <li><a href="../projects.html">Project</a></li>
+          <li><a href="../journal.html">Journal</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Blog</h2>
+        <p>Technical notes on AI-assisted systems, backend performance, testing, and architecture.</p>
+      </section>
+
+      <section class="list">
+        <article class="item">
+          <h3><a class="item-title-link" href="designing-ai-assisted-pricing-systems/">Designing AI-Assisted Pricing Systems at Scale</a></h3>
+          <p class="meta">Dummy Post • Architecture</p>
+          <p>Moving manual pricing workflows to a decision-assist platform with measurable impact.</p>
+        </article>
+
+        <article class="item">
+          <h3><a class="item-title-link" href="latency-p99-performance-engineering/">Latency, p99 Build Time, and Practical Performance Engineering</a></h3>
+          <p class="meta">Dummy Post • Performance</p>
+          <p>A framework for selecting and validating optimization work in production services.</p>
+        </article>
+
+        <article class="item">
+          <h3><a class="item-title-link" href="improving-llm-alignment/">Improving LLM Alignment in Conversational Analytics</a></h3>
+          <p class="meta">Dummy Post • Applied AI</p>
+          <p>Iterative techniques that improved response quality and consistency in enterprise chatbot flows.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Aditya Singh</div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
