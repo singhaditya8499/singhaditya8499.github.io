@@ -51,7 +51,6 @@ body {
   min-height: 66px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 0.7rem;
   position: relative;
 }
@@ -66,6 +65,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  margin-left: auto;
 }
 
 .menu-toggle,
@@ -78,8 +78,13 @@ body {
   cursor: pointer;
 }
 
+.theme-toggle {
+  order: 2;
+}
+
 .menu-toggle {
   display: none;
+  order: 1;
 }
 
 .nav-links {
@@ -88,6 +93,8 @@ body {
   gap: 0.85rem;
   margin: 0;
   padding: 0;
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-links a {
@@ -142,6 +149,23 @@ main {
 .photo-slot {
   display: grid;
   gap: 0.6rem;
+}
+
+.informal-panel {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 0.8rem;
+}
+
+.informal-panel h4 {
+  margin: 0 0 0.45rem;
+}
+
+.informal-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .photo-box {
@@ -312,6 +336,48 @@ button {
   color: var(--muted);
   text-align: center;
   padding: 1rem 0 1.7rem;
+}
+
+.social-strip {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding: 0.5rem 0;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.84rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  background: var(--surface);
+}
+
+.social-link:hover {
+  color: var(--accent);
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 @media (max-width: 860px) {
