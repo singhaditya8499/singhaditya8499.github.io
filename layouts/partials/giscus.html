@@ -1,0 +1,18 @@
+{{ if and .IsPage (not .IsSection) (ne .RelPermalink "/tags/") (ne .RelPermalink
+"/search/") }}
+<script src="https://giscus.app/client.js"
+        data-repo="singhaditya8499/portfolio-site"
+        data-repo-id="REPLACE_WITH_YOUR_GISCUS_REPO_ID"
+        data-category="Q&A"
+        data-category-id="REPLACE_WITH_YOUR_GISCUS_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
+{{ end }}

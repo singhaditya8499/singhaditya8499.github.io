@@ -1,42 +1,29 @@
-# Portfolio Website
+# Portfolio Site (Hugo + PaperMod)
 
-Static portfolio website ready for GitHub Pages deployment.
+This project now mirrors the structure and design approach of the reference repo using Hugo and PaperMod.
 
-## Local preview
+## Local run
 
-Open `index.html` directly in your browser, or run:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
-
-## Deploy to a NEW GitHub repository
-
-1. Create a new repository on GitHub, for example: `portfolio-site`.
-2. In this project folder run:
+1. Install Hugo extended.
+2. Run:
 
 ```bash
-git init
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/singhaditya8499/portfolio-site.git
-git push -u origin main
+hugo server -D
 ```
 
-3. In GitHub repo settings: `Settings` > `Pages`
-4. Under `Build and deployment`:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Save. Your site will be available in a minute at:
+3. Open `http://localhost:1313`.
 
-`https://singhaditya8499.github.io/portfolio-site/`
+## Deploy on GitHub Pages
 
-## If you want to use the existing Pages repository
+This repo includes a GitHub Actions workflow at:
 
-If you push this to `singhaditya8499.github.io`, your URL will be root-level:
+- `.github/workflows/hugo.yaml`
 
-`https://singhaditya8499.github.io/`
+It deploys automatically on pushes to `main`.
+
+## Personal data to update
+
+- `hugo.toml` (title, social links, email, intro)
+- `content/about.md` (bio, projects, achievements)
+- `content/blog/*`, `content/musings/*`, `content/vim_stuff/*` (replace with your own writing)
+- Optional integrations in `layouts/partials/*` (newsletter, giscus, analytics)

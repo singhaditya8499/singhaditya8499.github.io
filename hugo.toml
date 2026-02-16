@@ -1,0 +1,102 @@
+baseURL = 'https://singhaditya8499.github.io/portfolio-site/'
+languageCode = "en-us"
+title = "Aditya Singh"
+theme = "PaperMod"
+buildFuture = true
+
+[outputs]
+  home = ['html', 'rss', 'json']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+[params]
+  mainSections = ["blog", "musings", "vim_stuff"]
+  hideSummary = true
+  comments = false
+  archives = true
+  archiveSection = ["blog", "musings", "vim_stuff"]
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPageNums = true
+  search = true
+  searchPlaceholder = "Search..."
+  disableScrollToTop = true
+
+  [params.homeInfoParams]
+  Title = "{{< terminal-prompt >}}"
+  Content = "### Hey! I'm Aditya\nWelcome to my corner of the internet. This is my personal portfolio and writing space where I share projects, experiments, and notes from my learning journey."
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/singhaditya8499"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:your-email@example.com"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/your-linkedin-id/"
+
+  [[params.socialIcons]]
+  name = "RSS"
+  url = "https://singhaditya8499.github.io/portfolio-site/index.xml"
+
+  [params.cover]
+  linkFullImages = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1_000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "posts"
+name = "Blog"
+url = "/blog/"
+weight = 3
+
+[[menu.main]]
+identifier = "musings"
+name = "Essays"
+url = "/musings/"
+weight = 4
+
+[[menu.main]]
+identifier = "vim_stuff"
+name = "Vim Stuff"
+url = "/vim_stuff/"
+weight = 5
+
+[[menu.main]]
+identifier = "search"
+name = "🔍"
+url = "/search/"
+weight = 6
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
