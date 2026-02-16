@@ -343,3 +343,42 @@ button {
     display: flex;
   }
 }
+
+.blog-controls {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.blog-controls input {
+  max-width: 360px;
+}
+
+.empty-state {
+  display: none;
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.blog-entry-head {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.entry-thumb {
+  width: 128px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .blog-entry-head {
+    grid-template-columns: 1fr;
+  }
+}
