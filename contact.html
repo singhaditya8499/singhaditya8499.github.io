@@ -11,7 +11,10 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Aditya Singh</a>
-        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
+          <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+        </div>
         <ul id="nav-links" class="nav-links">
           <li><a href="index.html">About Me</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -24,21 +27,23 @@
 
     <main class="container">
       <section class="hero">
-        <h1>Contact</h1>
-        <p>For roles, collaboration, or technical discussions.</p>
+        <h2>Contact</h2>
+        <p>Open to software engineering opportunities and technical collaborations.</p>
       </section>
 
       <section class="grid">
-        <article class="card">
-          <h2>Reach me</h2>
-          <p>Email: your-email@example.com</p>
-          <p>GitHub: github.com/singhaditya8499</p>
-          <p>LinkedIn: linkedin.com/in/your-linkedin-id</p>
+        <article class="panel">
+          <h3>Details</h3>
+          <p>Bellevue, WA</p>
+          <p>Email: <a href="mailto:singh.aditya8499@hotmail.com">singh.aditya8499@hotmail.com</a></p>
+          <p>Phone: <a href="tel:+15715477518">+1 (571) 547-7518</a></p>
+          <p>GitHub: <a href="https://github.com/singhaditya8499" target="_blank" rel="noreferrer">github.com/singhaditya8499</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/singhaditya8499/" target="_blank" rel="noreferrer">linkedin.com/in/singhaditya8499</a></p>
         </article>
 
-        <article class="card">
-          <h2>Send a message</h2>
-          <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <article class="panel">
+          <h3>Quick Message</h3>
+          <form action="mailto:singh.aditya8499@hotmail.com" method="post" enctype="text/plain">
             <label for="name">Name</label>
             <input id="name" name="name" required />
             <label for="email">Email</label>

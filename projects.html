@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projects by Aditya Singh" />
+    <meta name="description" content="Projects and publications by Aditya Singh" />
     <title>Project | Aditya Singh</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,7 +11,10 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Aditya Singh</a>
-        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
+          <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+        </div>
         <ul id="nav-links" class="nav-links">
           <li><a href="index.html">About Me</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -24,30 +27,56 @@
 
     <main class="container">
       <section class="hero">
-        <h1>Projects</h1>
-        <p>Selected builds that reflect my SDE workflow and problem solving.</p>
+        <h2>Projects</h2>
+        <p>Selected projects from AI, web applications, and applied machine learning.</p>
       </section>
 
-      <section class="project-list">
+      <section class="list">
         <article class="item">
-          <h3>Realtime Task Engine</h3>
-          <p class="meta">Node.js, WebSocket, Redis</p>
-          <p>Distributed task execution engine with retry queues and metrics.</p>
-          <a href="#">GitHub</a>
+          <h3>GPT Stock Recommender</h3>
+          <p class="meta">Oct 2024 - Present</p>
+          <p>
+            Built an AI-driven stock recommendation system using LlamaIndex,
+            combining three LLMs and sentiment analysis on financial news.
+          </p>
         </article>
 
         <article class="item">
-          <h3>Analytics Dashboard</h3>
-          <p class="meta">React, TypeScript, Charting</p>
-          <p>Dashboard for tracking product KPIs with dynamic filtering.</p>
-          <a href="#">Live demo</a>
+          <h3>MoodTunes</h3>
+          <p class="meta">Oct 2023</p>
+          <p>
+            Team-led web app to reduce anxiety through personalized music recommendations
+            using the 14-point HAM-A scale and emotion-aware music metadata.
+          </p>
         </article>
 
         <article class="item">
-          <h3>CI/CD Starter Template</h3>
-          <p class="meta">GitHub Actions, Docker</p>
-          <p>Reusable pipeline for linting, testing, and deployment.</p>
-          <a href="#">Repository</a>
+          <h3>BlinkBridge</h3>
+          <p class="meta">Mar 2023</p>
+          <p>
+            Prototyped an ML-powered app translating eye blinks into digital actions,
+            aimed at improving accessibility for disabled students.
+          </p>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h3>Publications</h3>
+          <ul>
+            <li>AnoGAN for Tabular Data: A Novel Approach to Anomaly Detection (HCI 2024)</li>
+            <li>Optimizing Performance in Basketball: Game-Theoretic Shot Distribution (ACSS 2023)</li>
+            <li>Filter Based Scalable Blockchain for Domestic IoT (ICCES 2020 - IEEE)</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>Achievements</h3>
+          <ul>
+            <li>Winner, George Hacks - blockchain solution for medical record exchange</li>
+            <li>Winner, Amazon internal hackathon awards: Out of Box and Just Fund It</li>
+            <li>ACM ICPC Asia Regionals finalist, Google Kickstart global rank 206</li>
+          </ul>
         </article>
       </section>
     </main>

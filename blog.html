@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Engineering blog by Aditya Singh" />
+    <meta name="description" content="Blog by Aditya Singh" />
     <title>Blog | Aditya Singh</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,7 +11,10 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Aditya Singh</a>
-        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
+          <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+        </div>
         <ul id="nav-links" class="nav-links">
           <li><a href="index.html">About Me</a></li>
           <li><a class="active" href="blog.html">Blog</a></li>
@@ -24,30 +27,27 @@
 
     <main class="container">
       <section class="hero">
-        <h1>Engineering Blog</h1>
-        <p>Notes on architecture, debugging, performance, and system design.</p>
+        <h2>Blog</h2>
+        <p>Technical notes on AI-assisted systems, backend performance, testing, and architecture.</p>
       </section>
 
-      <section class="post-list">
+      <section class="list">
         <article class="item">
-          <h3>Designing API Error Handling That Scales</h3>
-          <p class="meta">Jan 2026 • Backend</p>
-          <p>How to build consistent error contracts across microservices.</p>
-          <a href="#">Read post</a>
+          <h3>Designing AI-Assisted Pricing Systems at Scale</h3>
+          <p class="meta">Case study from logistics pricing workflows and automation patterns.</p>
+          <p>Planned write-up on moving from manual operations to AI-assisted decisioning in production.</p>
         </article>
 
         <article class="item">
-          <h3>Practical Frontend Performance Checklist</h3>
-          <p class="meta">Dec 2025 • Frontend</p>
-          <p>Real-world checklist for improving LCP, TTI, and bundle size.</p>
-          <a href="#">Read post</a>
+          <h3>Latency, p99 Build Time, and Practical Performance Engineering</h3>
+          <p class="meta">How to prioritize optimization where it impacts product teams most.</p>
+          <p>Notes from reducing API latency and improving integration testing velocity.</p>
         </article>
 
         <article class="item">
-          <h3>Logging and Monitoring for Small Teams</h3>
-          <p class="meta">Nov 2025 • DevOps</p>
-          <p>Setting up meaningful observability without over-engineering.</p>
-          <a href="#">Read post</a>
+          <h3>Improving LLM Alignment in Conversational Analytics</h3>
+          <p class="meta">From 50% to 80% response accuracy using targeted optimization techniques.</p>
+          <p>Lessons from production chatbot tuning and evaluation loops.</p>
         </article>
       </section>
     </main>

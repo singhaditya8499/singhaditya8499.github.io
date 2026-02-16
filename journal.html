@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learning journal by Aditya Singh" />
+    <meta name="description" content="Professional journal by Aditya Singh" />
     <title>Journal | Aditya Singh</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,7 +11,10 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Aditya Singh</a>
-        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
+          <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+        </div>
         <ul id="nav-links" class="nav-links">
           <li><a href="index.html">About Me</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -24,24 +27,49 @@
 
     <main class="container">
       <section class="hero">
-        <h1>Journal</h1>
-        <p>Short updates from my weekly engineering learning and experiments.</p>
+        <h2>Journal</h2>
+        <p>Career timeline and key impact snapshots.</p>
       </section>
 
-      <section class="journal-list">
+      <section class="list">
         <article class="item">
-          <h3>Week 06: Query Optimization</h3>
-          <p class="meta">Focused on slow query analysis and indexing strategy.</p>
+          <h3>Amazon - Software Development Engineer II</h3>
+          <p class="meta">Bellevue, WA | Jan 2025 - Present</p>
+          <ul>
+            <li>Reduced price-setting cycle time from around 2 days to around 2 hours.</li>
+            <li>Delivered 30% lower API latency and 40% faster p99 builds.</li>
+            <li>Shipped granular pricing differentiation driving around 10% customer savings.</li>
+            <li>Built MCP-based DLQ/on-call automation reducing operational load by 70%.</li>
+          </ul>
         </article>
 
         <article class="item">
-          <h3>Week 05: System Design Practice</h3>
-          <p class="meta">Practiced messaging systems and caching tradeoffs.</p>
+          <h3>EAB - Software Developer Engineer</h3>
+          <p class="meta">New York, NY | Jul 2024 - Present</p>
+          <ul>
+            <li>Led migration of conversational analytics bot to asynchronous architecture.</li>
+            <li>Improved chatbot alignment from 50% to 80% response accuracy.</li>
+            <li>Delivered APIs supporting validation/status workflows for 2800+ partner institutes.</li>
+          </ul>
         </article>
 
         <article class="item">
-          <h3>Week 04: Test Reliability</h3>
-          <p class="meta">Reduced flaky integration tests by isolating network dependencies.</p>
+          <h3>ASANTe - Lead Software Engineer</h3>
+          <p class="meta">Boulder, CO | Jun 2023 - Mar 2024</p>
+          <ul>
+            <li>Architected a decentralized currency exchange app using Hyperledger Fabric 2.2 and AMB.</li>
+            <li>Implemented smart contracts and Java APIs over AWS blockchain services.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <h3>Amazon - Software Development Engineer</h3>
+          <p class="meta">Hyderabad, India | Jul 2020 - Jul 2022</p>
+          <ul>
+            <li>Built invoice generation for B2B logistics, reducing customer pain points by 30%.</li>
+            <li>Contributed invoicing features for B2C shipping at 400M package scale.</li>
+            <li>Automated document checks, reducing effort from 2 days to 10 minutes.</li>
+          </ul>
         </article>
       </section>
     </main>

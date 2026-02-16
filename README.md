@@ -1,24 +1,23 @@
-# Portfolio Website
+# Aditya Singh Portfolio
 
-Static multi-page portfolio website for GitHub Pages.
+Minimal static portfolio website with:
 
-## Pages
+- About Me
+- Blog
+- Project
+- Journal
+- Contact
+- Light/Dark mode toggle
 
-- About Me (`index.html`)
-- Blog (`blog.html`)
-- Projects (`projects.html`)
-- Journal (`journal.html`)
-- Contact (`contact.html`)
+## Add profile picture
 
-## Deploy to GitHub Pages
+Place your image at:
 
-Push this folder to your GitHub repo, then in repo settings:
+`/Users/adityasingh/Documents/Projects/Portfolio/profile.jpg`
 
-1. Open `Settings > Pages`
-2. Source: `Deploy from a branch`
-3. Branch: `main`
-4. Folder: `/ (root)`
+## Deploy on GitHub Pages
 
-For repo `portfolio-site`, URL will be:
-
-`https://singhaditya8499.github.io/portfolio-site/`
+1. Push to your repository.
+2. In GitHub: `Settings > Pages`
+3. Source: `Deploy from a branch`
+4. Branch: `main`, Folder: `/ (root)`
