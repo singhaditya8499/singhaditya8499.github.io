@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Aditya Singh" />
+    <title>Project | Aditya Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Aditya Singh</a>
+        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="projects.html">Project</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Projects</h1>
+        <p>Selected builds that reflect my SDE workflow and problem solving.</p>
+      </section>
+
+      <section class="project-list">
+        <article class="item">
+          <h3>Realtime Task Engine</h3>
+          <p class="meta">Node.js, WebSocket, Redis</p>
+          <p>Distributed task execution engine with retry queues and metrics.</p>
+          <a href="#">GitHub</a>
+        </article>
+
+        <article class="item">
+          <h3>Analytics Dashboard</h3>
+          <p class="meta">React, TypeScript, Charting</p>
+          <p>Dashboard for tracking product KPIs with dynamic filtering.</p>
+          <a href="#">Live demo</a>
+        </article>
+
+        <article class="item">
+          <h3>CI/CD Starter Template</h3>
+          <p class="meta">GitHub Actions, Docker</p>
+          <p>Reusable pipeline for linting, testing, and deployment.</p>
+          <a href="#">Repository</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Aditya Singh</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

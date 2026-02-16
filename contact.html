@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Aditya Singh" />
+    <title>Contact | Aditya Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Aditya Singh</a>
+        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Project</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Contact</h1>
+        <p>For roles, collaboration, or technical discussions.</p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Reach me</h2>
+          <p>Email: your-email@example.com</p>
+          <p>GitHub: github.com/singhaditya8499</p>
+          <p>LinkedIn: linkedin.com/in/your-linkedin-id</p>
+        </article>
+
+        <article class="card">
+          <h2>Send a message</h2>
+          <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Aditya Singh</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

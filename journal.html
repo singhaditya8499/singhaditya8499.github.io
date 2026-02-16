@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learning journal by Aditya Singh" />
+    <title>Journal | Aditya Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Aditya Singh</a>
+        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Project</a></li>
+          <li><a class="active" href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Journal</h1>
+        <p>Short updates from my weekly engineering learning and experiments.</p>
+      </section>
+
+      <section class="journal-list">
+        <article class="item">
+          <h3>Week 06: Query Optimization</h3>
+          <p class="meta">Focused on slow query analysis and indexing strategy.</p>
+        </article>
+
+        <article class="item">
+          <h3>Week 05: System Design Practice</h3>
+          <p class="meta">Practiced messaging systems and caching tradeoffs.</p>
+        </article>
+
+        <article class="item">
+          <h3>Week 04: Test Reliability</h3>
+          <p class="meta">Reduced flaky integration tests by isolating network dependencies.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Aditya Singh</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

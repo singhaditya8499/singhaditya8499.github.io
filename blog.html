@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Engineering blog by Aditya Singh" />
+    <title>Blog | Aditya Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Aditya Singh</a>
+        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">About Me</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Project</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Engineering Blog</h1>
+        <p>Notes on architecture, debugging, performance, and system design.</p>
+      </section>
+
+      <section class="post-list">
+        <article class="item">
+          <h3>Designing API Error Handling That Scales</h3>
+          <p class="meta">Jan 2026 • Backend</p>
+          <p>How to build consistent error contracts across microservices.</p>
+          <a href="#">Read post</a>
+        </article>
+
+        <article class="item">
+          <h3>Practical Frontend Performance Checklist</h3>
+          <p class="meta">Dec 2025 • Frontend</p>
+          <p>Real-world checklist for improving LCP, TTI, and bundle size.</p>
+          <a href="#">Read post</a>
+        </article>
+
+        <article class="item">
+          <h3>Logging and Monitoring for Small Teams</h3>
+          <p class="meta">Nov 2025 • DevOps</p>
+          <p>Setting up meaningful observability without over-engineering.</p>
+          <a href="#">Read post</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Aditya Singh</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
