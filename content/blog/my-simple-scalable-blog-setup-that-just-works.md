@@ -24,7 +24,7 @@ I spent a lot of time researching Static Site Generators (SSGs) and stumbled upo
 If you also want a no-fluff easy to setup blog that scales, you're at the right place. Let me walk you through my blogging setup.
 
 {{< callout type = "info">}}
-If you want to see my code for my blog, here's the [github repo link](https://github.com/Aditya117/singhaditya8499.github.io/).
+If you want to see my code for my blog, here's the [github repo link](https://github.com/singhaditya8499/singhaditya8499.github.io/).
 {{< /callout >}}
 
 ## Getting Started With Hugo

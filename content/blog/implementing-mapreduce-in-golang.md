@@ -12,7 +12,7 @@ Ever wondered how Google processes massive amounts of data? Or how systems like 
 In this post, we'll build our own MapReduce system in Go. I'll be basically be implementing the famous [Google paper](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf) in golang!
 
 {{< callout type="info" >}}
-You can find my implementation of the paper in this [github repository](https://github.com/Aditya117/mapReduceGo/tree/master/mapreduce).
+You can find my implementation of the paper in this [github repository](https://github.com/singhaditya8499/mapReduceGo/tree/master/mapreduce).
 {{< /callout >}}
 
 ## Why I Built This

@@ -33,7 +33,7 @@ Things started changing when I started learning Go. I was building CLI tools lik
 
 I was pumped! After watching some of [Anthony GG](https://www.youtube.com/@anthonygg_)'s videos, I jumped into building a REST API project. But as I dug deeper, I quickly realized I didn’t fully understand key concepts like handlers, REST design, or database schemas. Every time I hit a roadblock, instead of figuring things out, I turned to GPT for quick fixes.
 
-This pattern continued in my [code-snippet-manager project](https://github.com/Aditya117/snippet-manager-go) (which, by the way, is still a work in progress). I relied heavily on GPT for nearly every aspect—from building handlers to setting up the database layer and even Docker configurations. Initially, it felt like I was blazing through development, rapidly getting things done. However, over time, I realized I was only solving the surface-level problems without deeply understanding the underlying architecture.
+This pattern continued in my [code-snippet-manager project](https://github.com/singhaditya8499/snippet-manager-go) (which, by the way, is still a work in progress). I relied heavily on GPT for nearly every aspect—from building handlers to setting up the database layer and even Docker configurations. Initially, it felt like I was blazing through development, rapidly getting things done. However, over time, I realized I was only solving the surface-level problems without deeply understanding the underlying architecture.
 
 Eventually, I hit a point where I couldn’t even navigate my own codebase. Whether it was debugging database queries, modifying handlers, or handling Docker configurations, everything started feeling foreign. The overuse of GPT had left noticeable gaps in my understanding, and I had become far too dependent on it to solve problems I should’ve been learning to solve on my own.
 
@@ -86,5 +86,5 @@ Just remember, it's more fun to be competent.
 ## References
 
 - [My blog post on building an interpreter in Golang](https://singhaditya8499.github.io/blog/things-building-an-interpreter-taught-me/)
-- [My code-snippet-manager project](https://github.com/Aditya117/snippet-manager-go)
+- [My code-snippet-manager project](https://github.com/singhaditya8499/snippet-manager-go)
 - [Anthony GG YouTube Channel](https://www.youtube.com/@anthonygg_)

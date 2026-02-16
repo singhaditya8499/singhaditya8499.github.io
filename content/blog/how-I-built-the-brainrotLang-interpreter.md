@@ -7,14 +7,14 @@ cover.image = '/images/brainrotLangInterpreter.jpg'
 tags = ['tech', 'golang', 'brainrot']
 +++
 
-Last year, when learning about how the LSPs (Language Server Protocol) for different languages work internally, I built this [Brainrot LSP](https://github.com/Aditya117/brainrot-lsp), which was a Language Server for brainrot slangs which can be integrated to your neovim config.
+Last year, when learning about how the LSPs (Language Server Protocol) for different languages work internally, I built this [Brainrot LSP](https://github.com/singhaditya8499/brainrot-lsp), which was a Language Server for brainrot slangs which can be integrated to your neovim config.
 
 And for some reason, now I want to expand on that idea. So I decided to build a full-fledged Brainrot Programming Language Suite!
 
 In this article, I would walk y'all through the interpreter for The BrainrotLang. This article is the first one in the BrainrotLang Trilogy, and it's going to be so slayyy✨
 
 {{< callout  emoji="🌐" >}}
-You can find the source code of this project in this [**github repository**](https://github.com/Aditya117/brainrotLang-interpreter)
+You can find the source code of this project in this [**github repository**](https://github.com/singhaditya8499/brainrotLang-interpreter)
 {{< /callout >}}
 
 Although I knew I had to build this, I didn't know how. When looking into literature around languages I came across this very famous book of Thorsten Ball called [Writing an Interpreter in Go](https://interpreterbook.com/), which I referred to build brainrotLang's interpreter.
@@ -291,7 +291,7 @@ Next up I might add support for array methods like `.push()` or iteration. But f
 ![demo](/images/interpreterDemo.gif)
 
 {{< callout  emoji="🌐" >}}
-You can find the source code of this project in this [**github repository**](https://github.com/Aditya117/brainrotLang-interpreter)
+You can find the source code of this project in this [**github repository**](https://github.com/singhaditya8499/brainrotLang-interpreter)
 {{< /callout >}}
 
 ## Up Next

@@ -240,7 +240,7 @@
                   // For tag nodes, permalink format: "/permalink/tag_name_with_underscores"
                   const tagName = d.title.replace(/\s+/g, "-");
                   const tagPermalink = {{ if eq hugo.Environment "production" }}
-                    "/tags/" + tagName.toLowerCase() + "/"
+                    "https://singhaditya8499.github.io/tags/" + tagName.toLowerCase()
                   {{ else }}
                     "http://localhost:1313/tags/" + tagName.toLowerCase()
                   {{ end }};

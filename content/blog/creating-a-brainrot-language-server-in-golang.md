@@ -10,7 +10,7 @@ tags = ["golang", "tech", 'brainrot']
 I was reading the language server protocol docs and about json-rpc for collaborating on a new project which will need an LSP server. Since it was getting a little boring to just read so much of documentations and RFCs, I thought of making a small and fun project around LSPs.
 
 {{< callout  emoji="🌐" >}}
-You can find the source code of this project in this [**github repository**](https://github.com/Aditya117/brainrot-lsp)
+You can find the source code of this project in this [**github repository**](https://github.com/singhaditya8499/brainrot-lsp)
 {{< /callout >}}
 
 ## What's an LSP?
@@ -120,7 +120,7 @@ Intialize and shutdown are two of the mandatory LSP lifecycle methods. Fortunate
 package main
 
 import (
-	"github.com/Aditya117/brainrot-lsp/handlers"
+	"github.com/singhaditya8499/brainrot-lsp/handlers"
 	"github.com/tliron/commonlog"
 	"github.com/tliron/glsp"
 	protocol "github.com/tliron/glsp/protocol_3_16"
@@ -211,7 +211,7 @@ package handlers
 import (
 	"fmt"
 
-	"github.com/Aditya117/brainrot-lsp/mappers"
+	"github.com/singhaditya8499/brainrot-lsp/mappers"
 	_ "github.com/tliron/commonlog/simple"
 	"github.com/tliron/glsp"
 	protocol "github.com/tliron/glsp/protocol_3_16"
@@ -310,4 +310,4 @@ This is only a basic language server. We'd need to add more stuff to it to make 
 
 Building an LSP might seem daunting, but Go and modern libraries make it approachable. This fun project shows how LSP can enhance any text editing experience, even if it's just helping you write more brainrot slangs lol.
 
-The full code is available on [GitHub](https://github.com/Aditya117/brainrot-lsp). Feel free to contribute and make it even more 🔥!
+The full code is available on [GitHub](https://github.com/singhaditya8499/brainrot-lsp). Feel free to contribute and make it even more 🔥!

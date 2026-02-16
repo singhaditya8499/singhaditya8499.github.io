@@ -13,7 +13,7 @@ Recently, I read the famous 2013 Google paper [Tail at Scale](https://dl.acm.org
 And in this post, I'll discuss my golang implementation of the paper. But first, let's discuss the paper itself.
 
 {{< callout type="info" >}}
-You can find my implementation of the paper in this [github repository](https://github.com/Aditya117/tailAtScaleGo).
+You can find my implementation of the paper in this [github repository](https://github.com/singhaditya8499/tailAtScaleGo).
 {{< /callout >}}
 
 ## What was the problem discussed
@@ -159,7 +159,7 @@ because _rare becomes common_ when your request touches hundreds or thousands of
 
 I wrote an implementation of Hedged requests to demonstrate how this technique can dramatically reduce tail latencies in practice.
 
-For the frontend, I used the [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) framework. I won't get into details of that, but I think the [code](https://github.com/Aditya117/tailAtScaleGo/blob/master/cli.go) is easy to follow.
+For the frontend, I used the [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) framework. I won't get into details of that, but I think the [code](https://github.com/singhaditya8499/tailAtScaleGo/blob/master/cli.go) is easy to follow.
 
 ### The Simulation Configuration
 
@@ -464,4 +464,4 @@ The "Tail at Scale" paper remains just as relevant today as it was in 2013. As s
 
 Hedged requests are a simple yet powerful technique that every distributed systems engineer should have in their toolkit. They're relatively easy to implement (as this simulation shows) and can provide dramatic improvements in user experience.
 
-The full code for this simulation is [on my GitHub](https://github.com/Aditya117/tailAtScaleGo). Feel free to play around with the parameters and see how different configurations affect tail latencies. It's a great way to build intuition about how these techniques work in practice.
+The full code for this simulation is [on my GitHub](https://github.com/singhaditya8499/tailAtScaleGo). Feel free to play around with the parameters and see how different configurations affect tail latencies. It's a great way to build intuition about how these techniques work in practice.
