@@ -102,6 +102,13 @@
     return html;
   };
 
+  const embedded = document.getElementById("md-source");
+  const embeddedMd = embedded && typeof embedded.value === "string" ? embedded.value : "";
+  if (embeddedMd.trim()) {
+    container.innerHTML = parseMarkdown(embeddedMd);
+    return;
+  }
+
   fetch("./index.md")
     .then((res) => res.text())
     .then((md) => {
