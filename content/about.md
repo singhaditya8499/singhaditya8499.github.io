@@ -2,42 +2,32 @@
 title: "About"
 ---
 
-I am a software engineer with 4+ years of experience building large-scale, AI-driven, and distributed systems across logistics, finance, and conversational platforms.
+I am a software engineer focused on building practical AI-powered products and distributed systems that can scale in real production environments. Over the last 4+ years, I have worked across pricing automation, conversational systems, and backend performance, with an emphasis on fast execution, reliable architectures, and measurable customer impact.
 
-At Amazon, I built LLM-assisted pricing systems that compressed multi-day workflows into hours, improved latency by up to 80%, and reduced on-call effort through automation.
+## Life Journey
 
-I enjoy solving high-impact problems where AI, data, and systems design intersect.
-
-## Journey
-
-- **Dec 2025 - Present:** Software Development Engineer II, Amazon Web Services (Seattle)
-- **Jan 2025 - Dec 2025:** Software Development Engineer II, Amazon (Bellevue)
-- **Jul 2024 - Jan 2025:** Software Engineer, EAB (Washington, DC)
-- **Jun 2023 - Jun 2024:** Lead Software Engineer, ASANTe (Boulder)
-- **Jul 2020 - Jul 2022:** Software Development Engineer, Amazon (Hyderabad)
-- **Aug 2022 - May 2024:** M.S. Computer Science, The George Washington University
-
-## Top Skills
-
-`LangChain`, `LangGraph`, `RAG`, `Go`, `AWS`, `Distributed Systems`, `System Design`, `CI/CD`, `MongoDB`
-
-## Certifications
-
-- Golang-Jumpstart on Cloud
-- AWS Academy Cloud Foundations
-- MongoDB
-- Getting Started with Go
-
-## Honors & Awards
-
-- Smart India Hackathon 2018 Winner
-- ACM-ICPC Asia Regionals 2018
-- INMO Camp Participant
-- Amazon: Just Fund It, Out of the Box
-
-## Publications
-
-- Markov Chains: A Simple Powerful Tool
-- Filter Based Scalable Blockchain for Domestic IoT
-- BK Trees: Unexplored Data Structure
-- Optimizing Performance in Basketball (Game-Theoretic Approach)
+<details class="timeline-collapse" open>
+  <summary>Life Journey</summary>
+  <div class="timeline">
+    <div class="timeline-item">
+      <p class="timeline-date">2025 - Present</p>
+      <h4>Seattle chapter</h4>
+      <p>Building at AWS, learning deeply about AI systems and distributed architecture.</p>
+    </div>
+    <div class="timeline-item">
+      <p class="timeline-date">2022 - 2024</p>
+      <h4>Graduate school + industry transition</h4>
+      <p>Completed M.S. in Computer Science at George Washington University while growing into senior engineering ownership.</p>
+    </div>
+    <div class="timeline-item">
+      <p class="timeline-date">2020 - 2022</p>
+      <h4>Foundation years at Amazon</h4>
+      <p>Started professional software engineering journey and developed strong production engineering fundamentals.</p>
+    </div>
+    <div class="timeline-item">
+      <p class="timeline-date">Pre-2020</p>
+      <h4>Early builder years</h4>
+      <p>Competitive programming, hackathons, and research-oriented learning shaped my problem-solving style.</p>
+    </div>
+  </div>
+</details>

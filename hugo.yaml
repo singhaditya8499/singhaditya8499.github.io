@@ -19,7 +19,7 @@ params:
   description: "SDE II at Amazon (AWS) | AI-Driven, Distributed Systems"
   defaultTheme: auto
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowCodeCopyButtons: true
   ShowToc: true
   ShowBreadCrumbs: true
@@ -37,8 +37,8 @@ params:
     buttons:
       - name: Blog
         url: posts/
-      - name: Projects
-        url: projects/
+      - name: Work
+        url: work/
       - name: Journal
         url: journal/
       - name: About
@@ -51,7 +51,7 @@ params:
     - name: github
       url: "https://github.com/singhaditya8499"
     - name: x
-      url: "https://x.com"
+      url: "https://x.com/wh1tewhale"
     - name: instagram
       url: "https://instagram.com"
     - name: email
@@ -63,9 +63,9 @@ menu:
       name: Blog
       pageRef: /posts
       weight: 10
-    - identifier: projects
-      name: Projects
-      pageRef: /projects
+    - identifier: work
+      name: Work
+      pageRef: /work
       weight: 20
     - identifier: journal
       name: Journal
