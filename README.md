@@ -1,23 +1,54 @@
-# Aditya Singh Portfolio
+# Aditya Singh Portfolio (Hugo + PaperMod)
 
-Minimal static portfolio website with:
+This repository is now structured as a **Hugo** site using the **PaperMod** theme, with:
 
-- About Me
-- Blog
-- Project
-- Journal
-- Contact
-- Light/Dark mode toggle
+- Home / About
+- Blog (`/posts`)
+- Projects (`/projects`)
+- Journal (`/journal`)
+- Contact (`/contact`)
 
-## Add profile picture
+## 1) Install prerequisites (macOS)
 
-Place your image at:
+```bash
+brew install hugo
+```
 
-`/Users/adityasingh/Documents/Projects/Portfolio/profile.jpg`
+## 2) Add the PaperMod theme
 
-## Deploy on GitHub Pages
+From the repository root:
 
-1. Push to your repository.
-2. In GitHub: `Settings > Pages`
-3. Source: `Deploy from a branch`
-4. Branch: `main`, Folder: `/ (root)`
+```bash
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+```
+
+If submodule already exists, run:
+
+```bash
+git submodule update --init --recursive
+```
+
+## 3) Run locally
+
+```bash
+hugo server -D
+```
+
+Open: `http://localhost:1313`
+
+## 4) Build production output
+
+```bash
+hugo --minify
+```
+
+Generated site will be in `public/`.
+
+## Content locations
+
+- Posts: `content/posts/`
+- Projects: `content/projects/`
+- Journal: `content/journal/`
+- About page: `content/about.md`
+- Contact page: `content/contact.md`
+- Site config: `hugo.yaml`

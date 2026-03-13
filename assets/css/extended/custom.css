@@ -1,0 +1,14 @@
+.post-content ul li { margin-bottom: 0.25rem; }
+.section-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.profile_inner img {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}

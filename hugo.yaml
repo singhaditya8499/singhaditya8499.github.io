@@ -1,0 +1,92 @@
+baseURL: "https://singhaditya8499.github.io/"
+languageCode: "en-us"
+title: "Aditya Singh"
+theme: "PaperMod"
+enableRobotsTXT: true
+relativeURLs: true
+
+pagination:
+  pagerSize: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "SDE II at Amazon (AWS) | AI-Driven, Distributed Systems"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  cover:
+    hiddenInList: false
+    hiddenInSingle: false
+  profileMode:
+    enabled: true
+    title: "Aditya Singh"
+    subtitle: "SDE-II at Amazon (AWS) | AI-Driven, Distributed Systems"
+    imageUrl: "images/profile.jpg"
+    imageTitle: "Aditya Singh"
+    imageWidth: 220
+    imageHeight: 220
+    buttons:
+      - name: Blog
+        url: posts/
+      - name: Projects
+        url: projects/
+      - name: Journal
+        url: journal/
+      - name: About
+        url: about/
+      - name: Contact
+        url: contact/
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/singhaditya8499"
+    - name: github
+      url: "https://github.com/singhaditya8499"
+    - name: x
+      url: "https://x.com"
+    - name: instagram
+      url: "https://instagram.com"
+    - name: email
+      url: "mailto:singh.aditya8499@gmail.com"
+
+menu:
+  main:
+    - identifier: posts
+      name: Blog
+      pageRef: /posts
+      weight: 10
+    - identifier: projects
+      name: Projects
+      pageRef: /projects
+      weight: 20
+    - identifier: journal
+      name: Journal
+      pageRef: /journal
+      weight: 30
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 40
+    - identifier: contact
+      name: Contact
+      pageRef: /contact
+      weight: 50
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
