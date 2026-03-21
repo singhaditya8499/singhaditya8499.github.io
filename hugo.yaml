@@ -71,10 +71,6 @@ menu:
       name: Projects
       pageRef: /projects
       weight: 25
-    - identifier: journal
-      name: Journal
-      pageRef: /journal
-      weight: 30
     - identifier: about
       name: About
       pageRef: /about
