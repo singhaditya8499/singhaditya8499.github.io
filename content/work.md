@@ -96,6 +96,12 @@ description: "Work experience, projects, research and publications, and core ski
 
 <div class="info-cards">
   <div class="info-card">
+    <h4>DocCompass</h4>
+    <p><strong>Skills:</strong> Python, Information Retrieval, LLM Integration, Ollama</p>
+    <p>Local-first document search agent that indexes files from Documents/Downloads/Desktop and retrieves results by semantic intent using query planning, fallback heuristics, and IDF-based relevance ranking.</p>
+    <p><a href="https://github.com/singhaditya8499/DocCompass" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+  </div>
+  <div class="info-card">
     <h4>MoodTunes</h4>
     <p><strong>Skills:</strong> Python, Machine Learning</p>
     <p>Personalized music recommendation tool designed to reduce anxiety and improve relaxation using emotion-aware signals.</p>

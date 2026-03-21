@@ -67,6 +67,10 @@ menu:
       name: Work
       pageRef: /work
       weight: 20
+    - identifier: projects
+      name: Projects
+      pageRef: /projects
+      weight: 25
     - identifier: journal
       name: Journal
       pageRef: /journal
