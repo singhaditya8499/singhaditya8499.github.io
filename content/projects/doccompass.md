@@ -2,6 +2,7 @@
 title: "DocCompass: Local-First Document Search Agent"
 date: 2026-03-21
 description: "Semantic local document search system with lazy indexing, Ollama-powered query planning, fallback heuristics, and scored ranked results."
+projectType: "Project"
 tags: ["python", "llm", "search", "information-retrieval", "ollama", "rag"]
 ---
 

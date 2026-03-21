@@ -2,6 +2,7 @@
 title: "GPT Stock Recommender"
 date: 2026-01-01
 description: "AI-driven stock recommendation pipeline with sentiment-aware evaluation."
+projectType: "Project"
 tags: ["llm", "llamaindex", "finance", "ai"]
 ---
 

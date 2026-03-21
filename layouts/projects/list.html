@@ -1,0 +1,103 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $paginator := .Paginate .RegularPages }}
+{{- if gt (len $paginator.Pages) 0 }}
+<div class="project-filters" aria-label="Project tag filters">
+  <button type="button" class="project-filter-btn is-active" data-filter="all">All</button>
+  <button type="button" class="project-filter-btn" data-filter="project">Project</button>
+  <button type="button" class="project-filter-btn" data-filter="research">Research</button>
+</div>
+{{- end }}
+
+{{- range $paginator.Pages }}
+{{- $ptype := .Param "projectType" | default "Project" }}
+{{- $ptypeSlug := $ptype | lower | urlize }}
+<article class="post-entry project-entry" data-project-type="{{ $ptypeSlug }}">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent project-entry-title">
+      <span class="project-title-text">{{- .Title -}}</span>
+      <span class="project-type-badge project-type-{{ $ptype | lower | urlize }}">{{ $ptype }}</span>
+    </h2>
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="project link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+<p id="project-filter-empty" class="project-filter-empty" hidden>No projects found for this tag.</p>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">«&nbsp;{{ i18n "prev_page" }}</a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{- i18n "next_page" }}&nbsp;»</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".project-filter-btn");
+    const entries = document.querySelectorAll(".project-entry");
+    const emptyState = document.getElementById("project-filter-empty");
+
+    if (!filterButtons.length || !entries.length) return;
+
+    function applyFilter(filterValue) {
+      let visibleCount = 0;
+
+      entries.forEach(function (entry) {
+        const projectType = entry.getAttribute("data-project-type") || "";
+        const show = filterValue === "all" || projectType === filterValue;
+        entry.classList.toggle("is-hidden", !show);
+        if (show) visibleCount += 1;
+      });
+
+      if (emptyState) emptyState.classList.toggle("is-hidden", visibleCount !== 0);
+    }
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        filterButtons.forEach(function (b) { b.classList.remove("is-active"); });
+        button.classList.add("is-active");
+        applyFilter(button.getAttribute("data-filter") || "all");
+      });
+    });
+
+    applyFilter("all");
+  });
+</script>
+
+{{- end }}

@@ -1,6 +1,6 @@
 ---
 title: "Work"
-description: "Work experience, projects, research and publications, and core skills."
+description: "Work experience and core skills."
 ---
 
 ## Work Experience
@@ -89,97 +89,6 @@ description: "Work experience, projects, research and publications, and core ski
     <p><strong>Duration:</strong> May 2017 - August 2017</p>
     <p><strong>Location:</strong> Noida, India</p>
     <p><strong>Work Summary:</strong> Built a smart attendance system using real-time face recognition with Python and OpenCV, addressing common issues in traditional attendance systems. Integrated SendGrid to automate reporting and notifications.</p>
-  </div>
-</div>
-
-## Projects
-
-<div class="info-cards">
-  <div class="info-card">
-    <h4>DocCompass</h4>
-    <p><strong>Skills:</strong> Python, Information Retrieval, LLM Integration, Ollama</p>
-    <p>Local-first document search agent that indexes files from Documents/Downloads/Desktop and retrieves results by semantic intent using query planning, fallback heuristics, and IDF-based relevance ranking.</p>
-    <p><a href="https://github.com/singhaditya8499/DocCompass" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
-  </div>
-  <div class="info-card">
-    <h4>MoodTunes</h4>
-    <p><strong>Skills:</strong> Python, Machine Learning</p>
-    <p>Personalized music recommendation tool designed to reduce anxiety and improve relaxation using emotion-aware signals.</p>
-  </div>
-  <div class="info-card">
-    <h4>CardWise AI</h4>
-    <p><strong>Skills:</strong> Python, Large Language Models (LLM)</p>
-    <p>AI platform for credit card discovery, goal planning, and smart spending summaries to support safer financial decisions.</p>
-  </div>
-  <div class="info-card">
-    <h4>BlinkBridge</h4>
-    <p><strong>Skills:</strong> Computer Vision, Accessibility, Python</p>
-    <p>Facial-landmark based system that converts blink patterns into digital actions for accessibility and assistive interactions.</p>
-  </div>
-  <div class="info-card">
-    <h4>Customer Reise</h4>
-    <p><strong>Skills:</strong> Spring, Angular, Elasticsearch</p>
-    <p>Built a web app to replay customer log journeys and help support teams diagnose user issues faster and more accurately.</p>
-  </div>
-  <div class="info-card">
-    <h4>LeetCode Rank Finder</h4>
-    <p><strong>Skills:</strong> Python, Scripting, Data Parsing</p>
-    <p>Utility script to search contest standings by username and return user rank, addressing a key search gap in LeetCode contests.</p>
-  </div>
-  <div class="info-card">
-    <h4>Markov Chain Basic</h4>
-    <p><strong>Skills:</strong> Python, Probability, NLP Basics</p>
-    <p>Built a Markov-chain based text generator to produce manifesto-like content and explore long-run convergence behavior.</p>
-  </div>
-  <div class="info-card">
-    <h4>Hand Game</h4>
-    <p><strong>Skills:</strong> OpenCV, Pygame, Computer Vision</p>
-    <p>Hand-gesture controlled game using background subtraction and contour-based finger detection for real-time input.</p>
-  </div>
-  <div class="info-card">
-    <h4>Face Recognition System</h4>
-    <p><strong>Skills:</strong> Computer Vision, OpenCV, Python</p>
-    <p>Real-time face recognition pipeline with separate stages for sample capture, model training, and live identification.</p>
-  </div>
-  <div class="info-card">
-    <h4>Graph Plotter</h4>
-    <p><strong>Skills:</strong> C++, graphics.h</p>
-    <p>Built a plotting tool for trigonometric and polynomial functions to understand pixel-level rendering and graphics logic.</p>
-  </div>
-</div>
-
-## Research and Publications
-
-<div class="info-cards">
-  <div class="info-card">
-    <h4>Markov Chains: A Simple Powerful Tool</h4>
-    <p><strong>Source:</strong> Medium</p>
-    <p>A practical introduction to Markov chains with intuition-first explanations and examples of state-transition modeling.</p>
-    <p><a href="https://medium.com/future-vision/markov-chains-a-simple-powerful-tool-11e5b733045d" target="_blank" rel="noopener noreferrer">Read article</a></p>
-  </div>
-  <div class="info-card">
-    <h4>Filter Based Scalable Blockchain for Domestic IoT</h4>
-    <p><strong>Source:</strong> IEEE Xplore (conference publication)</p>
-    <p>Proposes a scalable blockchain architecture for domestic IoT environments, with emphasis on efficient validation and trust handling.</p>
-    <p><a href="https://ieeexplore.ieee.org/abstract/document/9138008/" target="_blank" rel="noopener noreferrer">Read publication</a></p>
-  </div>
-  <div class="info-card">
-    <h4>BK Trees: Unexplored Data Structure</h4>
-    <p><strong>Source:</strong> Medium</p>
-    <p>Covers BK Trees for approximate string matching and fast edit-distance search in large vocabularies.</p>
-    <p><a href="https://medium.com/future-vision/bk-trees-unexplored-data-structure-ec234f39052d" target="_blank" rel="noopener noreferrer">Read article</a></p>
-  </div>
-  <div class="info-card">
-    <h4>AnoGAN for Tabular Data: A Novel Approach to Anomaly Detection</h4>
-    <p><strong>Source:</strong> Springer (book chapter)</p>
-    <p>Introduces an AnoGAN-based approach tailored for tabular datasets to improve anomaly detection quality beyond standard baselines.</p>
-    <p><a href="https://link.springer.com/chapter/10.1007/978-3-031-78561-0_32" target="_blank" rel="noopener noreferrer">Read chapter</a></p>
-  </div>
-  <div class="info-card">
-    <h4>Optimizing Performance in Basketball: A Game-Theoretic Approach to Shot Percentage Distribution in a Team</h4>
-    <p><strong>Source:</strong> arXiv</p>
-    <p>Applies game-theoretic modeling to shot distribution strategy and team-level performance optimization in basketball.</p>
-    <p><a href="https://arxiv.org/pdf/2310.00136" target="_blank" rel="noopener noreferrer">Read paper</a></p>
   </div>
 </div>
 

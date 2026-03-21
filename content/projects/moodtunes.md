@@ -2,6 +2,7 @@
 title: "MoodTunes"
 date: 2026-01-02
 description: "Music-based anxiety support app using HAM-A signals and emotion scoring."
+projectType: "Project"
 tags: ["web", "ml", "healthtech"]
 ---
 

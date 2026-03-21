@@ -2,6 +2,7 @@
 title: "BlinkBridge"
 date: 2026-01-03
 description: "Blink-to-action interaction model designed for assistive learning scenarios."
+projectType: "Project"
 tags: ["accessibility", "ml", "assistive-tech"]
 ---
 
