@@ -13,6 +13,16 @@
   border-radius: 50% !important;
 }
 
+.post-entry .entry-cover {
+  margin-bottom: 0.9rem;
+}
+
+.post-entry .entry-cover img {
+  width: min(100%, 340px);
+  max-height: 190px;
+  object-fit: cover;
+}
+
 .timeline {
   position: relative;
   margin: 0.9rem 0 1.2rem;
