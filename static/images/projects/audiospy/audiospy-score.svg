@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 410" role="img" aria-labelledby="title description">
+  <title id="title">AudioSpy scores from a real test</title>
+  <desc id="description">A line chart shows mostly low monitoring scores, one score of 4.85 below the threshold, and a detection score of 13.79 above the threshold of 7.</desc>
+  <defs>
+    <style>
+      :root { --bg:#f8fafc; --panel:#ffffff; --ink:#172033; --muted:#5f6b7a; --line:#cbd5e1; --blue:#2563eb; --red:#dc2626; --green:#15803d; --zone:#dcfce7; }
+      @media (prefers-color-scheme: dark) { :root { --bg:#111827; --panel:#1f2937; --ink:#f3f4f6; --muted:#cbd5e1; --line:#475569; --blue:#60a5fa; --red:#f87171; --green:#4ade80; --zone:#173c2a; } }
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill:var(--ink); }
+      .title { font-size:25px; font-weight:700; }
+      .axis { font-size:15px; fill:var(--muted); }
+      .label { font-size:16px; font-weight:700; }
+      .grid { stroke:var(--line); stroke-width:1; }
+    </style>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="720" height="410" rx="24" fill="var(--bg)"/>
+  <text x="32" y="44" class="title">Real scores: normal readings, a near miss, and an event</text>
+
+  <rect x="78" y="78" width="608" height="245" rx="12" fill="var(--panel)" stroke="var(--line)"/>
+  <rect x="79" y="279" width="606" height="43" fill="var(--zone)" opacity="0.8"/>
+  <text x="673" y="304" text-anchor="end" class="axis" fill="var(--green)">usual range</text>
+
+  <line x1="78" y1="323" x2="686" y2="323" class="grid"/>
+  <line x1="78" y1="201" x2="686" y2="201" stroke="var(--red)" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <line x1="78" y1="78" x2="686" y2="78" class="grid"/>
+  <text x="65" y="328" text-anchor="end" class="axis">0</text>
+  <text x="65" y="206" text-anchor="end" class="axis">7</text>
+  <text x="65" y="84" text-anchor="end" class="axis">14</text>
+  <text x="93" y="190" class="label" fill="var(--red)">trigger threshold 7</text>
+
+  <polyline points="91,307 135,289 179,303 223,317 267,316 311,82 355,311 399,300 443,238 487,299 531,311 575,313 619,316 663,287" fill="none" stroke="var(--blue)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <g fill="var(--panel)" stroke="var(--blue)" stroke-width="3">
+    <circle cx="91" cy="307" r="5"/><circle cx="135" cy="289" r="5"/><circle cx="179" cy="303" r="5"/><circle cx="223" cy="317" r="5"/><circle cx="267" cy="316" r="5"/>
+    <circle cx="355" cy="311" r="5"/><circle cx="399" cy="300" r="5"/><circle cx="443" cy="238" r="6"/><circle cx="487" cy="299" r="5"/><circle cx="531" cy="311" r="5"/><circle cx="575" cy="313" r="5"/><circle cx="619" cy="316" r="5"/><circle cx="663" cy="287" r="5"/>
+  </g>
+
+  <circle cx="311" cy="82" r="10" fill="var(--red)" filter="url(#glow)"/>
+  <path d="M311 94 V132" stroke="var(--red)" stroke-width="2"/>
+  <text x="326" y="112" class="label" fill="var(--red)">13.79, event logged</text>
+  <path d="M443 232 V213" stroke="var(--blue)" stroke-width="2"/>
+  <text x="457" y="222" class="label" fill="var(--blue)">4.85, no event</text>
+
+  <text x="382" y="363" text-anchor="middle" class="axis">Observed output sequence</text>
+  <text x="22" y="203" transform="rotate(-90 22 203)" text-anchor="middle" class="axis">Change score</text>
+  <text x="382" y="391" text-anchor="middle" class="axis">A high score must also persist across four audio blocks.</text>
+</svg>

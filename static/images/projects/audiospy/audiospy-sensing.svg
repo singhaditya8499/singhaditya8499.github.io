@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-labelledby="title description">
+  <title id="title">How AudioSpy senses a nearby person</title>
+  <desc id="description">A laptop emits three high-frequency tones. The sound reflects from a nearby person and returns to the laptop microphone, changing the room fingerprint.</desc>
+  <defs>
+    <style>
+      :root { --bg:#f8fafc; --panel:#ffffff; --ink:#172033; --muted:#5f6b7a; --line:#cbd5e1; --blue:#2563eb; --cyan:#0891b2; --purple:#7c3aed; --green:#15803d; }
+      @media (prefers-color-scheme: dark) { :root { --bg:#111827; --panel:#1f2937; --ink:#f3f4f6; --muted:#cbd5e1; --line:#475569; --blue:#60a5fa; --cyan:#22d3ee; --purple:#c4b5fd; --green:#4ade80; } }
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill:var(--ink); }
+      .title { font-size:25px; font-weight:700; }
+      .label { font-size:18px; font-weight:650; }
+      .small { font-size:15px; fill:var(--muted); }
+      .tone { fill:none; stroke-width:4; stroke-linecap:round; }
+    </style>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--blue)"/></marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--purple)"/></marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.13"/></filter>
+  </defs>
+
+  <rect width="720" height="430" rx="24" fill="var(--bg)"/>
+  <text x="32" y="45" class="title">Sound turns the space around the laptop into a sensor</text>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="50" y="105" width="270" height="178" rx="14" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/>
+    <rect x="67" y="122" width="236" height="143" rx="7" fill="var(--bg)"/>
+    <path d="M27 286 H344 L379 327 Q382 336 368 338 H37 Q23 336 27 326 Z" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/>
+    <path d="M151 314 H254" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g aria-label="Laptop speaker">
+    <circle cx="92" cy="309" r="17" fill="var(--cyan)" opacity="0.18"/>
+    <circle cx="92" cy="309" r="7" fill="var(--cyan)"/>
+    <text x="53" y="371" class="label">Speaker</text>
+  </g>
+  <g aria-label="Laptop microphone">
+    <circle cx="287" cy="309" r="17" fill="var(--purple)" opacity="0.18"/>
+    <circle cx="287" cy="309" r="7" fill="var(--purple)"/>
+    <text x="248" y="371" class="label">Microphone</text>
+  </g>
+
+  <g aria-label="Nearby person">
+    <text x="558" y="79" class="label">Nearby person</text>
+    <circle cx="620" cy="133" r="41" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/>
+    <path d="M546 333 C551 246 571 197 620 197 C669 197 690 246 695 333 Z" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/>
+    <path d="M590 151 Q620 171 650 151" fill="none" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <path d="M109 299 Q315 103 568 174" class="tone" stroke="var(--cyan)" marker-end="url(#arrow-blue)"/>
+  <path d="M111 311 Q342 171 553 226" class="tone" stroke="var(--blue)" marker-end="url(#arrow-blue)" opacity="0.8"/>
+  <path d="M112 321 Q344 251 546 282" class="tone" stroke="var(--cyan)" marker-end="url(#arrow-blue)" opacity="0.6"/>
+  <text x="262" y="108" class="label">Three quiet tones travel outward</text>
+  <text x="335" y="135" class="small">18.75, 19.25, and 19.75 kHz</text>
+
+  <path d="M570 190 Q447 228 306 300" class="tone" stroke="var(--purple)" stroke-dasharray="9 8" marker-end="url(#arrow-purple)"/>
+  <path d="M558 246 Q437 285 306 308" class="tone" stroke="var(--purple)" stroke-dasharray="9 8" marker-end="url(#arrow-purple)" opacity="0.75"/>
+  <text x="380" y="391" class="label" fill="var(--purple)">Changed reflections return</text>
+  <text x="398" y="416" class="small">The microphone sees a new fingerprint</text>
+</svg>

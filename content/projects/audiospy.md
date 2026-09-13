@@ -18,6 +18,8 @@ The laptop plays sound at frequencies near the upper edge of human hearing, list
 
 Think of shining a flashlight at a wall. If someone walks through the beam, the light pattern changes. AudioSpy applies the same idea to sound.
 
+{{< figure src="/images/projects/audiospy/audiospy-sensing.svg" alt="A laptop sends three high-frequency tones toward a nearby person. Changed reflections return to the microphone." caption="A nearby person changes the paths that sound takes from the speakers back to the microphone." align="center" width="720" height="430" >}}
+
 ## How a Laptop Can Sense Someone with Sound
 
 AudioSpy continuously plays three low-volume tones at 18.75 kHz, 19.25 kHz, and 19.75 kHz. Most adults cannot hear these frequencies, although complete inaudibility cannot be guaranteed for every person, speaker, or pet.
@@ -29,6 +31,8 @@ When a hand or body approaches, it blocks some paths and creates new reflections
 The system does not need to understand speech. It looks only at the strength of the three tones it generated.
 
 ## From Sound to a Detection
+
+{{< figure src="/images/projects/audiospy/audiospy-pipeline.svg" alt="A six-step pipeline emits tones, observes reflections, samples the microphone, measures carriers, scores the change, and logs a sustained event." caption="AudioSpy reduces every microphone block to three measurements, compares them with the empty room, and logs only sustained changes." align="center" width="720" height="500" >}}
 
 ### 1. Learn the empty room
 
@@ -66,6 +70,8 @@ In one real test, AudioSpy learned these baseline amplitudes:
 Ordinary readings moved between roughly 0.3 and 2. Placing hands above the speakers produced clearly higher scores. One sustained approach reached 13.79 and generated an event.
 
 The score is not a distance in centimeters and it is not a probability. It measures how unusual the three reflected tones look compared with the room AudioSpy learned.
+
+{{< figure src="/images/projects/audiospy/audiospy-score.svg" alt="A line chart of real AudioSpy scores. Most readings stay below 2, one reaches 4.85 without an event, and one reaches 13.79 above the threshold of 7." caption="Observed scores from a real session. The 4.85 reading remained below the threshold, while the sustained 13.79 change produced an event." align="center" width="720" height="410" >}}
 
 ### 4. Require a sustained change
 
