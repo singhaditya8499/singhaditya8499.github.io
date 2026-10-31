@@ -1,16 +1,20 @@
 ---
 title: "What Is the Fastest Way to Empty a Bus?"
 date: "2026-10-31"
-description: "I built a visual simulator to compare different ways of getting 60 passengers off a bus."
+description: "A weekday shuttle from Bellevue to Seattle made me wonder whether 60 passengers could get off a bus faster."
 author: "Aditya Singh"
 tags: ["simulation", "algorithms", "optimization", "visualization"]
 ---
 
-I was thinking about a very ordinary problem: what is the fastest way to empty a bus?
+Every weekday, I take the 9:00 AM shuttle from Bellevue to my office in Seattle.
+
+When we arrive, passengers usually leave one row at a time. The first row on the right goes first, then the first row on the left, followed by the second row on the right, the second row on the left, and so on toward the back of the bus.
+
+After watching the same sequence repeat every morning, I started wondering if it was actually the fastest way to get everyone off. Could a different order keep the aisle moving and save time?
 
 Everyone eventually has to pass through the same door, but they do not reach the aisle at the same time. A person sitting next to the aisle can stand up quickly. A person at the window needs more time and cannot move until the person beside them is out of the way. Passengers near the back have farther to walk, and people entering the aisle too early can block everyone behind them.
 
-It looked like a small scheduling problem hiding inside an everyday activity, so I built a simulator for it.
+It looked like a small scheduling problem hiding inside my daily commute, so I modeled the shuttle and built a simulator for it.
 
 > **Try the experiment:** [Open the interactive bus exit simulator](/bus-exit-simulator/)
 
@@ -38,11 +42,13 @@ I compared six ways of releasing passengers:
 | Strategy | Idea |
 | --- | --- |
 | Everyone at once | Every eligible passenger starts immediately. |
-| Front to back | Rows leave in order from the door toward the rear. |
+| Front to back | Right side, then left side, one row at a time toward the rear. |
 | Back to front | Rear rows are invited to leave first. |
 | Aisle seats first | Aisle passengers form the first wave and window passengers form the second. |
 | Alternating rows | Odd rows start first, followed by even rows. |
 | Smart stagger | Passengers are released into predicted gaps in the aisle. |
+
+The Front to back strategy represents what I see on the shuttle: first-right, first-left, second-right, second-left, continuing toward the rear.
 
 The first surprise is that “closest to the door first” is not automatically the best answer. A front passenger can leave quickly, but releasing front rows too conservatively can leave the door unused. Starting at the back has the opposite problem: passengers travel farther and can create a long queue before the front seats have moved.
 
@@ -72,6 +78,8 @@ The most important constraint is the single-file aisle. A strategy does not win 
 ## What Won?
 
 With the default assumptions, Smart Stagger emptied the bus in about **61.1 seconds**. It finished roughly **1.6 seconds** ahead of the next strategy in the current model.
+
+The Front to back order used on my shuttle took about **1 minute and 7 seconds** in the same model. That makes Smart Stagger roughly six seconds faster. Six seconds is not a dramatic difference on one trip, but repeated across every weekday shuttle, it shows that the familiar order is not necessarily the most efficient one.
 
 That difference is small, and that is useful information. Once the door is continuously busy, no strategy can improve much because the door itself becomes the bottleneck. With 60 passengers and a one-second door service time, the theoretical floor is already close to one minute.
 
