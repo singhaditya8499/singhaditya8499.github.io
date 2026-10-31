@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An interactive simulator for comparing how quickly 60 passengers can exit a bus." />
+    <title>Clear the Bus — Exit Strategy Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Back to Aditya Singh's home page">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Clear the Bus</span>
+      </a>
+      <div class="site-links">
+        <a class="writeup-link" href="/posts/emptying-a-bus/">Read the write-up <span>↗</span></a>
+        <button class="assumption-link" id="assumptionsButton" type="button">Model assumptions <span>↗</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span></span> 60 passengers · 15 rows · 1 front door</div>
+        <h1>What’s the fastest way<br />to empty a bus?</h1>
+        <p>Compare exit strategies, watch the aisle fill in real time, and see which sequence clears every seat first.</p>
+      </section>
+
+      <section class="workspace" aria-label="Bus exit simulator">
+        <aside class="control-panel">
+          <div class="panel-heading">
+            <span class="step">01</span>
+            <div>
+              <p class="kicker">Choose a strategy</p>
+              <h2>Exit order</h2>
+            </div>
+          </div>
+          <div class="strategy-list" id="strategyList"></div>
+
+          <div class="controls-divider"></div>
+          <div class="panel-heading compact">
+            <span class="step">02</span>
+            <div>
+              <p class="kicker">Tune the model</p>
+              <h2>Timing</h2>
+            </div>
+          </div>
+          <label class="range-row">
+            <span><b>Aisle seat</b><output id="aisleOutput">1.0 s</output></span>
+            <input id="aisleTime" type="range" min="0.5" max="3" step="0.5" value="1" />
+          </label>
+          <label class="range-row">
+            <span><b>Window seat</b><output id="windowOutput">2.0 s</output></span>
+            <input id="windowTime" type="range" min="1" max="4" step="0.5" value="2" />
+          </label>
+          <label class="range-row">
+            <span><b>Walking pace</b><output id="walkOutput">1.0 row/s</output></span>
+            <input id="walkSpeed" type="range" min="0.5" max="2" step="0.25" value="1" />
+          </label>
+          <button class="compare-button" id="compareButton" type="button"><span>Run every strategy</span><span aria-hidden="true">→</span></button>
+        </aside>
+
+        <div class="simulator-card">
+          <div class="simulator-toolbar">
+            <div>
+              <p class="kicker">Live simulation</p>
+              <h2 id="activeStrategyName">Smart stagger</h2>
+            </div>
+            <div class="clock-block">
+              <span>Elapsed</span>
+              <strong id="clock">00:00.0</strong>
+            </div>
+          </div>
+
+          <div class="bus-stage">
+            <div class="bus-shell">
+              <div class="driver-cab">
+                <div class="steering">◌</div>
+                <span>FRONT</span>
+              </div>
+              <div class="door-label"><span>EXIT</span><i></i></div>
+              <div class="seat-grid" id="seatGrid" aria-label="Bus seating chart"></div>
+              <div class="bus-tail"><span></span><span></span></div>
+            </div>
+            <div class="aisle-track" id="aisleTrack" aria-hidden="true"></div>
+          </div>
+
+          <div class="playback">
+            <button class="play-button" id="playButton" type="button" aria-label="Play simulation"><span id="playIcon">▶</span></button>
+            <div class="progress-wrap">
+              <input id="progress" type="range" min="0" max="1000" value="0" aria-label="Simulation progress" />
+              <div class="progress-labels"><span>Start</span><span id="progressStatus">60 seated</span><span>Empty</span></div>
+            </div>
+            <button class="reset-button" id="resetButton" type="button" aria-label="Restart simulation">↺</button>
+            <label class="speed-select">Speed
+              <select id="playbackSpeed" aria-label="Playback speed">
+                <option value="1">1×</option>
+                <option value="2" selected>2×</option>
+                <option value="4">4×</option>
+                <option value="8">8×</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <aside class="results-panel">
+          <div class="panel-heading">
+            <span class="step">03</span>
+            <div>
+              <p class="kicker">Results</p>
+              <h2>Time to empty</h2>
+            </div>
+          </div>
+
+          <div class="hero-result">
+            <span>Selected strategy</span>
+            <strong id="totalTime">—</strong>
+            <p id="resultDelta">Run the model to compare</p>
+          </div>
+
+          <div class="metric-grid">
+            <div><span>Last seat clears</span><strong id="lastSeat">—</strong></div>
+            <div><span>Peak aisle load</span><strong id="peakAisle">—</strong></div>
+          </div>
+
+          <div class="ranking-heading">
+            <span>Strategy ranking</span>
+            <small>Fastest first</small>
+          </div>
+          <div class="ranking" id="ranking"></div>
+          <p class="model-note"><span>i</span> Times are estimates from a single-file, no-passing aisle model.</p>
+        </aside>
+      </section>
+
+      <section class="insight" id="insight">
+        <div class="insight-number">01</div>
+        <div>
+          <p class="kicker">What the model reveals</p>
+          <h2 id="insightTitle">Keep the aisle moving.</h2>
+        </div>
+        <p id="insightText">The best sequence does not simply start at the front or the back. It feeds passengers into open gaps so the door remains busy without creating a standing traffic jam.</p>
+      </section>
+    </main>
+
+    <dialog id="assumptionsDialog">
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Close">×</button>
+        <p class="kicker">How it works</p>
+        <h2>Model assumptions</h2>
+        <ul>
+          <li><b>Layout:</b> 15 rows, four seats per row, one aisle, one front exit.</li>
+          <li><b>Getting up:</b> aisle passengers take the chosen aisle-seat time. A window passenger waits until the adjacent aisle passenger has exited the bus, then takes the chosen window-seat time.</li>
+          <li><b>Movement:</b> people walk in single file, cannot pass, and keep a small gap.</li>
+          <li><b>Door:</b> one passenger crosses the door every second.</li>
+          <li><b>Strategies:</b> change when rows are invited to stand; they do not change passenger walking speed.</li>
+        </ul>
+        <p>This is a decision model, not a crowd-safety plan. Real unloading varies with luggage, mobility, children, and compliance.</p>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
